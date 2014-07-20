@@ -8,7 +8,6 @@ public class PlayerControl : MonoBehaviour
 	[HideInInspector]
 	public bool jump = false;				// Condition for whether the player should jump.
 
-
 	public float moveForce = 365f;			// Amount of force added to move the player left and right.
 	public float maxSpeed = 5f;				// The fastest the player can travel in the x axis.
 	public AudioClip[] jumpClips;			// Array of clips for when the player jumps.
@@ -23,6 +22,10 @@ public class PlayerControl : MonoBehaviour
 	private bool grounded = false;			// Whether or not the player is grounded.
 	private Animator anim;					// Reference to the player's animator component.
 
+	// An object need to closer than that distance to be picked up.
+	public float pickUpDist = 1f;	
+	private Transform carriedObject = null;
+	private int pickupLayer = 1 << 10; //Layer to pickup
 
 	void Awake()
 	{
@@ -38,10 +41,57 @@ public class PlayerControl : MonoBehaviour
 		grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
 
 		// If the jump button is pressed and the player is grounded then the player should jump.
-		if(Input.GetButtonDown("Jump") && grounded)
+		if(Input.GetButtonDown("Jump") && grounded){
 			jump = true;
+		}
+
+		if(Input.GetButtonDown("Action")) // Define it in the input manager
+		{
+			if(carriedObject == null){
+				// Nothing in hand, we check if something is around and pick it up.
+				PickUp();
+
+			}else{
+				Drop();
+			}
+		}
+
 	}
 
+	void PickUp()
+	{		
+		// Collect every pickups around. Make sure they have a collider and the layer Pickup
+		Collider2D[] pickups = Physics2D.OverlapCircleAll( transform.position, pickUpDist, pickupLayer );
+		
+		// Find the closest
+		float dist = Mathf.Infinity;
+		for( int i = 0; i < pickups.Length; i++ )
+		{
+			float newDist = (transform.position - pickups[i].transform.position).sqrMagnitude;
+			if( newDist < dist )
+			{
+				carriedObject = pickups[i].transform;
+				dist = newDist;
+			}
+		}
+		
+		if( carriedObject != null ) // Check if we found something
+		{
+			Debug.Log("Picking");
+			// Set the box in front of character
+			Destroy(carriedObject.rigidbody);
+			carriedObject.parent = transform;
+			carriedObject.localPosition = new Vector3( 0, 1f, 1f ); // Might need to change that
+		}
+	}
+	
+	private void Drop()
+	{
+		Debug.Log("Dropping");
+		carriedObject.parent = null; // Unparenting
+		//carriedObject.gameObject.AddComponent( typeof(Rigidbody) ); // Gravity and co
+		carriedObject = null; // Hands are free again
+	}
 
 	void FixedUpdate ()
 	{
@@ -73,22 +123,24 @@ public class PlayerControl : MonoBehaviour
 		// If the player should jump...
 		if(jump)
 		{
-			// Set the Jump animator trigger parameter.
-			anim.SetTrigger("Jump");
-
-			// Play a random jump audio clip.
-			int i = Random.Range(0, jumpClips.Length);
-			AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
-
-			// Add a vertical force to the player.
-			rigidbody2D.AddForce(new Vector2(0f, jumpForce));
-
+			Jump();
 			// Make sure the player can't jump again until the jump conditions from Update are satisfied.
 			jump = false;
 		}
 	}
-	
-	
+
+	void Jump(){
+		// Set the Jump animator trigger parameter.
+		anim.SetTrigger("Jump");
+		
+		// Play a random jump audio clip.
+		int i = Random.Range(0, jumpClips.Length);
+		AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
+		
+		// Add a vertical force to the player.
+		rigidbody2D.AddForce(new Vector2(0f, jumpForce));
+	}
+
 	void Flip ()
 	{
 		// Switch the way the player is labelled as facing.
@@ -122,7 +174,6 @@ public class PlayerControl : MonoBehaviour
 			}
 		}
 	}
-
 
 	int TauntRandom()
 	{
