@@ -82,7 +82,7 @@ public class PlayerControl : MonoBehaviour
 			//carriedObject.gameObject.collider2D.enabled = false;
 			carriedObject.parent = transform;
 			carriedObject.localPosition = new Vector3( 1f, 1f, 1f ); // Might need to change that
-			carriedObject.localScale = new Vector3( 0.75f, 0.75f, 0.75f ); //Due to Unity -1 scale bug, goddam annoying, no fix in sight
+			carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug, goddam annoying, no fix in sight
 		}
 	}
 	
