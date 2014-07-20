@@ -16,7 +16,6 @@ public class PlayerControl : MonoBehaviour
 	public float tauntProbability = 50f;	// Chance of a taunt happening.
 	public float tauntDelay = 1f;			// Delay for when the taunt should happen.
 
-
 	private int tauntIndex;					// The index of the taunts array indicating the most recent taunt.
 	private Transform groundCheck;			// A position marking where to check if the player is grounded.
 	private bool grounded = false;			// Whether or not the player is grounded.
@@ -79,9 +78,11 @@ public class PlayerControl : MonoBehaviour
 		{
 			Debug.Log("Picking");
 			// Set the box in front of character
-			Destroy(carriedObject.rigidbody);
+			Destroy(carriedObject.rigidbody2D);
+			//carriedObject.gameObject.collider2D.enabled = false;
 			carriedObject.parent = transform;
-			carriedObject.localPosition = new Vector3( 0, 1f, 1f ); // Might need to change that
+			carriedObject.localPosition = new Vector3( 1f, 1f, 1f ); // Might need to change that
+			carriedObject.localScale = new Vector3( 0.75f, 0.75f, 0.75f ); //Due to Unity -1 scale bug, goddam annoying, no fix in sight
 		}
 	}
 	
@@ -89,8 +90,11 @@ public class PlayerControl : MonoBehaviour
 	{
 		Debug.Log("Dropping");
 		carriedObject.parent = null; // Unparenting
-		//carriedObject.gameObject.AddComponent( typeof(Rigidbody) ); // Gravity and co
+		carriedObject.gameObject.AddComponent( typeof(Rigidbody2D) ); // Gravity and co
+		//carriedObject.gameObject.collider2D.enabled = true;
+		carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
 		carriedObject = null; // Hands are free again
+
 	}
 
 	void FixedUpdate ()
