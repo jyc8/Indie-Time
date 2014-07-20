@@ -74,15 +74,14 @@ public class PlayerControl : MonoBehaviour
 			}
 		}
 		
-		if( carriedObject != null ) // Check if we found something
+		if( carriedObject != null ) // Check if an item is found
 		{
 			Debug.Log("Picking");
-			// Set the box in front of character
+			// Set the box on top of character
 			Destroy(carriedObject.rigidbody2D);
-			//carriedObject.gameObject.collider2D.enabled = false;
 			carriedObject.parent = transform;
 			carriedObject.localPosition = new Vector3( 0f, 1f, 1f ); // Might need to change that
-			carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug, goddam annoying, no fix in sight
+			carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug workaround, goddam annoying
 		}
 	}
 	
@@ -91,7 +90,6 @@ public class PlayerControl : MonoBehaviour
 		Debug.Log("Dropping");
 		carriedObject.parent = null; // Unparenting
 		carriedObject.gameObject.AddComponent( typeof(Rigidbody2D) ); // Gravity and co
-		//carriedObject.gameObject.collider2D.enabled = true;
 		carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
 		carriedObject = null; // Hands are free again
 
