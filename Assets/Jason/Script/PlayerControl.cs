@@ -79,22 +79,26 @@ public class PlayerControl : MonoBehaviour
 			Debug.Log("Picking");
 			// Set the box on top of character
 			Destroy(carriedObject.rigidbody2D);
-			//carriedObject.gameObject.rigidbody2D.gravityScale
 			carriedObject.parent = transform;
 			carriedObject.localPosition = new Vector3( 0f, 1f, 1f ); // Might need to change that
 			carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug workaround, goddam annoying
+			//Change Boolean
+			carriedObject.GetComponent<MusicObject>().Activate();
 		}
 	}
 	
 	private void Drop()
 	{
 		Debug.Log("Dropping");
-		carriedObject.localPosition = new Vector3( 1f, 0f, 1f ); 
+		carriedObject.localPosition = new Vector3( 1f, 0.5f, 1f ); 
 		carriedObject.parent = null; // Unparenting
 		carriedObject.gameObject.AddComponent( typeof(Rigidbody2D) ); // Gravity and co
 		carriedObject.gameObject.rigidbody2D.mass = 20;
 		carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
-		carriedObject = null; // Hands are free again
+		//Change Boolean
+		carriedObject.GetComponent<MusicObject>().Deactivate();
+		//Free Hands
+		carriedObject = null;
 
 	}
 
