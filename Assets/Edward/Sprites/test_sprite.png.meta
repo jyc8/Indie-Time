@@ -1,0 +1,94 @@
+fileFormatVersion: 2
+guid: 4facc6036f13741c691688a8b0c80209
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: body
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1904
+        width: 394
+        height: 416
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: head
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 1922
+        width: 360
+        height: 354
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: right_arm
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 2475
+        width: 137
+        height: 253
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: left_arm
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 2475
+        width: 195
+        height: 216
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: leg
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 1423
+        width: 169
+        height: 340
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 
