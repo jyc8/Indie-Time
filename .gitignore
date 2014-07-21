@@ -225,3 +225,7 @@ Temp
 *.unityproj
 *.sln
 *.userprefs
+Library/AssetServerCacheV3
+Library/assetDatabase3
+Library/guidmapper
+Library/metadata/97/97da9d722a405684682035a0576b30db
