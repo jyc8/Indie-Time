@@ -218,6 +218,7 @@ pip-log.txt
 ################
 .DS_Store
 Library
+Library/assetDatabase3
 Temp
 *.csproj
 *.pidb
