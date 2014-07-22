@@ -1338,6 +1338,9 @@ MonoBehaviour:
   tauntProbability: 50
   tauntDelay: 1
   pickUpDist: 2
+  attachObject: {fileID: 967458537}
+  attachDistX: .5
+  attachDistY: .5
 --- !u!1 &811898585
 GameObject:
   m_ObjectHideFlags: 0
