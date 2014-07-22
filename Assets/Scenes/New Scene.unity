@@ -1338,9 +1338,12 @@ MonoBehaviour:
   tauntProbability: 50
   tauntDelay: 1
   pickUpDist: 2
+<<<<<<< HEAD
   attachObject: {fileID: 1707746409}
   attachDistX: .5
   attachDistY: .5
+=======
+>>>>>>> parent of 4905ab2... added Variables for playerControl to tweak grab
 --- !u!1 &811898585
 GameObject:
   m_ObjectHideFlags: 0
