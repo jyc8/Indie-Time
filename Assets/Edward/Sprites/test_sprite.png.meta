@@ -75,10 +75,10 @@ TextureImporter:
     - name: left_arm
       rect:
         serializedVersion: 2
-        x: 931
-        y: 2475
-        width: 195
-        height: 216
+        x: 1527
+        y: 2478
+        width: 161
+        height: 248
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: leg
