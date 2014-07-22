@@ -22,9 +22,12 @@ public class PlayerControl : MonoBehaviour
 	private Animator anim;					// Reference to the player's animator component.
 
 	// An object need to closer than that distance to be picked up.
-	public float pickUpDist = 1f;	
 	private Transform carriedObject = null;
 	private int pickupLayer = 1 << 10; //Layer to pickup
+	public float pickUpDist = 1f;	
+	public GameObject attachObject;
+	public float attachDistX = 0;
+	public float attachDistY = 0;
 
 	void Awake()
 	{
@@ -79,8 +82,8 @@ public class PlayerControl : MonoBehaviour
 			Debug.Log("Picking");
 			// Set the box on top of character
 			Destroy(carriedObject.rigidbody2D);
-			carriedObject.parent = transform;
-			carriedObject.localPosition = new Vector3( 0f, 1f, 1f ); // Might need to change that
+			carriedObject.parent = attachObject.transform;
+			carriedObject.localPosition = new Vector3( attachDistX, attachDistY, 1f ); // Might need to change that
 			carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug workaround, goddam annoying
 			//Change Boolean
 			carriedObject.GetComponent<MusicObject>().Activate();
