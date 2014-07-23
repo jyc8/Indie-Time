@@ -216,19 +216,6 @@ pip-log.txt
 ###############
 ## UNITY STUFF
 ################
-.DS_Store
-Library
-Library/assetDatabase3
-Temp
-*.csproj
-*.pidb
-*.unityproj
-*.sln
-*.userprefs
-Library/AssetServerCacheV3
-Library/assetDatabase3
-Library/guidmapper
-Library/metadata/
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
