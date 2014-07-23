@@ -1,6 +1,8 @@
 fileFormatVersion: 2
 guid: 620784697ead14af1bfe772e15068bff
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: Health-bg
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

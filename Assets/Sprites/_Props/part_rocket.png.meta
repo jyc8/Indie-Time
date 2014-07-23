@@ -1,6 +1,8 @@
 fileFormatVersion: 2
 guid: bbbe340798352459386a0059f0d14360
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: part_rocket
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0

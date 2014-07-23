@@ -1,6 +1,8 @@
 fileFormatVersion: 2
 guid: f27a84c9104434a008b15db8e2a8535b
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: prop_parachute
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
