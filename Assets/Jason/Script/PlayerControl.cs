@@ -94,17 +94,21 @@ public class PlayerControl : MonoBehaviour
 	
 	private void Drop()
 	{
-		Debug.Log("Dropping");
-		carriedObject.localPosition = new Vector3( 1f, 0.5f, 1f ); 
-		carriedObject.parent = null; // Unparenting
-		carriedObject.gameObject.AddComponent( typeof(Rigidbody2D) ); // Gravity and co
-		carriedObject.gameObject.rigidbody2D.mass = 20;
-		carriedObject.gameObject.rigidbody2D.drag = 1.5f;
-		carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
-		//Change Boolean
-		carriedObject.GetComponent<MusicObject>().Deactivate();
-		//Free Hands
-		carriedObject = null;
+		Transform nearbySlot = findObject(pickUpDist, slotsLayer);
+		if( nearbySlot != null ) // Check if a slotis found
+		{
+			Debug.Log("Dropping");
+			carriedObject.localPosition = new Vector3( 1f, 0.5f, 1f ); 
+			carriedObject.parent = null; // Unparenting
+			carriedObject.gameObject.AddComponent( typeof(Rigidbody2D) ); // Gravity and co
+			carriedObject.gameObject.rigidbody2D.mass = 20;
+			carriedObject.gameObject.rigidbody2D.drag = 1.5f;
+			carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
+			//Change Boolean
+			carriedObject.GetComponent<MusicObject>().Deactivate();
+			//Free Hands
+			carriedObject = null;
+		}
 
 	}
 
