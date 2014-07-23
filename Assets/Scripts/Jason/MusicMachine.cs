@@ -7,16 +7,24 @@ public class MusicMachine : MonoBehaviour {
 
 	void TriggerEvents(int n, int m){
 		for (int i = 0; i < n; i++){
-			nature[i].SetActive(true);
+			if (nature[i] != null){
+				nature[i].SetActive(true);
+			}
 		}
 		for (int j = n; j < nature.Length; j++){
-			nature[j].SetActive(false);
+			if (nature[j] != null){
+				nature[j].SetActive(false);
+			}
 		}
 		for (int i = 0; i < m; i++){
-			machine[i].SetActive(true);
+			if (machine[i] != null){
+				machine[i].SetActive(true);
+			}
 		}
 		for (int j = m; j < machine.Length; j++){
-			machine[j].SetActive(false);
+			if (machine[j] != null){
+				machine[j].SetActive(false);
+			}
 		}
 	}
 

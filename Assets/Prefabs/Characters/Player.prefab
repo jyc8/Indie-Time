@@ -287,8 +287,8 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 6200000, guid: 24ac79603fb61400588e37d9f6fe952a, type: 2}
   m_IsTrigger: 0
-  m_Radius: .829999983
-  m_Center: {x: 0, y: -.449999988}
+  m_Radius: .5
+  m_Center: {x: 0, y: -.800000012}
 --- !u!61 &6100000
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -392,7 +392,7 @@ MonoBehaviour:
   jumpForce: 1000
   pickUpDist: 2
   attachObject: {fileID: 100004}
-  attachDistX: .400000006
+  attachDistX: .300000012
   attachDistY: -.800000012
 --- !u!212 &21200000
 SpriteRenderer:

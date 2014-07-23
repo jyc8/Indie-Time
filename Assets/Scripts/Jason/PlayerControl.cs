@@ -92,9 +92,13 @@ public class PlayerControl : MonoBehaviour
 		{
 			Debug.Log("Picking");
 			if (carriedObject.parent != null){
-				carriedObject.parent.GetComponent<MusicMachine>().UpdateSlots();
+				Transform musicMachine = carriedObject.parent.parent;
+				Attach(carriedObject);
+				musicMachine.GetComponent<MusicMachine>().UpdateSlots();
+			}else{
+				Attach(carriedObject);
 			}
-			Attach(carriedObject);
+
 		}
 	}
 	
