@@ -1,8 +1,6 @@
 fileFormatVersion: 2
 guid: 0ee26720b818146cd8ee20f36ac39f5b
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: SlotMachine
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,6 +46,15 @@ TextureImporter:
         serializedVersion: 2
         x: 330
         y: 27
+        width: 95
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: slot
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 332
         width: 95
         height: 75
       alignment: 0
