@@ -91,6 +91,9 @@ public class PlayerControl : MonoBehaviour
 		if( carriedObject != null ) // Check if an item is found
 		{
 			Debug.Log("Picking");
+			if (carriedObject.parent != null){
+				carriedObject.parent.GetComponent<MusicMachine>().UpdateSlots();
+			}
 			Attach(carriedObject);
 		}
 	}

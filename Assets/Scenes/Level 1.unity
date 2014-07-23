@@ -25268,7 +25268,7 @@ MonoBehaviour:
   loadLevel: 0
   level: Scene Name
   warp: 1
-  warpDistance: -2
+  warpDistance: -4
   warpHeight: 10
 --- !u!1 &1672172271
 GameObject:
