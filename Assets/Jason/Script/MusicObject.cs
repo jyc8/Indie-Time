@@ -4,14 +4,6 @@ using System.Collections;
 public class MusicObject : MonoBehaviour {
 	bool fading = false;
 
-	// Use this for initialization
-	void Start () {
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	}
-
 	public void Activate(){
 		Debug.Log("Music Object Activated");
 		fading = false;

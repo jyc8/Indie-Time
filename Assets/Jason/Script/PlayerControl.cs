@@ -76,19 +76,23 @@ public class PlayerControl : MonoBehaviour
 		return objectFound;
 	}
 
+	void Attach(Transform obj){
+		// Set the box on top of character
+		Destroy(obj.rigidbody2D);
+		obj.parent = attachObject.transform;
+		obj.localPosition = new Vector3( attachDistX, attachDistY, 1f ); //Attached Position
+		obj.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug workaround, goddam annoying
+		//Change Boolean
+		obj.GetComponent<MusicObject>().Activate();
+	}
+
 	void PickUp()
 	{				
 		carriedObject = findObject(pickUpDist, pickupLayer);
 		if( carriedObject != null ) // Check if an item is found
 		{
 			Debug.Log("Picking");
-			// Set the box on top of character
-			Destroy(carriedObject.rigidbody2D);
-			carriedObject.parent = attachObject.transform;
-			carriedObject.localPosition = new Vector3( attachDistX, attachDistY, 1f ); //Attached Position
-			carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug workaround, goddam annoying
-			//Change Boolean
-			carriedObject.GetComponent<MusicObject>().Activate();
+			Attach(carriedObject);
 		}
 	}
 	
@@ -97,13 +101,14 @@ public class PlayerControl : MonoBehaviour
 		Transform nearbySlot = findObject(pickUpDist, slotsLayer);
 		if( nearbySlot != null ) // Check if a slotis found
 		{
-			Debug.Log("Slotting");
+			if(nearbySlot.GetComponent<Slot>().isEmpty()){ //Is the slot empty
+				Debug.Log("Slotting");
+			}else{
+				Debug.Log("Swapping");
+				Attach(nearbySlot.GetChild(0));
+			}
 			carriedObject.parent = nearbySlot;
 			carriedObject.localPosition = new Vector3( 0f, 1f, 1f); //Slotted Position
-			if(!nearbySlot.GetComponent<Slot>().isEmpty()){
-
-			} else{
-			}
 		}else{ //Do this if no slots are found
 			Debug.Log("Dropping");
 			carriedObject.localPosition = new Vector3( 1f, 0.5f, 1f ); 
@@ -111,12 +116,11 @@ public class PlayerControl : MonoBehaviour
 			carriedObject.gameObject.AddComponent( typeof(Rigidbody2D) ); // Gravity and co
 			carriedObject.gameObject.rigidbody2D.mass = 20;
 			carriedObject.gameObject.rigidbody2D.drag = 1.5f;
-			carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
 		}
+		carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
 		carriedObject.GetComponent<MusicObject>().Deactivate();
 		//Free Hands
 		carriedObject = null;
-
 	}
 
 	void FixedUpdate ()
