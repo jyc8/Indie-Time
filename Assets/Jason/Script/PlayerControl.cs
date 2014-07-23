@@ -100,6 +100,10 @@ public class PlayerControl : MonoBehaviour
 			Debug.Log("Slotting");
 			carriedObject.parent = nearbySlot;
 			carriedObject.localPosition = new Vector3( 0f, 1f, 1f); //Slotted Position
+			if(!nearbySlot.GetComponent<Slot>().isEmpty()){
+
+			} else{
+			}
 		}else{ //Do this if no slots are found
 			Debug.Log("Dropping");
 			carriedObject.localPosition = new Vector3( 1f, 0.5f, 1f ); 
@@ -108,9 +112,8 @@ public class PlayerControl : MonoBehaviour
 			carriedObject.gameObject.rigidbody2D.mass = 20;
 			carriedObject.gameObject.rigidbody2D.drag = 1.5f;
 			carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
-			//Change Boolean
-			carriedObject.GetComponent<MusicObject>().Deactivate();
 		}
+		carriedObject.GetComponent<MusicObject>().Deactivate();
 		//Free Hands
 		carriedObject = null;
 
