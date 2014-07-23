@@ -8932,7 +8932,7 @@ MonoBehaviour:
   moveForce: 365
   maxSpeed: 8
   jumpClips:
-  - {fileID: 8300000, guid: 379686392ada8754aab3bb6ee0f9b051, type: 3}
+  - {fileID: 8300000, guid: 8dddb4227f48f9343ba7954cd4089345, type: 3}
   jumpForce: 1000
   pickUpDist: 2
   attachObject: {fileID: 491212417}
@@ -32667,6 +32667,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
+      propertyPath: jumpClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8dddb4227f48f9343ba7954cd4089345, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
   m_RootGameObject: {fileID: 528641004}
@@ -33251,7 +33255,7 @@ AudioSource:
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 495.0495
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 1
