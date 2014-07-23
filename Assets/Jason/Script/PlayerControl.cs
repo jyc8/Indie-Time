@@ -102,12 +102,18 @@ public class PlayerControl : MonoBehaviour
 		{
 			if(nearbySlot.GetComponent<Slot>().isEmpty()){ //Is the slot empty
 				Debug.Log("Slotting");
+				carriedObject.parent = nearbySlot;
+				carriedObject.localPosition = new Vector3( 0f, 1f, 1f); //Slotted Position
+				carriedObject = null; //Free Hands
 			}else{
 				Debug.Log("Swapping");
-				Attach(nearbySlot.GetChild(0));
+				Transform slotObject = nearbySlot.GetChild(0);
+				carriedObject.parent = nearbySlot;
+				carriedObject.localPosition = new Vector3( 0f, 1f, 1f); //Slotted Position
+				Attach(slotObject);
+				carriedObject = slotObject;
 			}
-			carriedObject.parent = nearbySlot;
-			carriedObject.localPosition = new Vector3( 0f, 1f, 1f); //Slotted Position
+
 			nearbySlot.parent.GetComponent<MusicMachine>().UpdateSlots();
 		}else{ //Do this if no slots are found
 			Debug.Log("Dropping");
@@ -116,10 +122,11 @@ public class PlayerControl : MonoBehaviour
 			carriedObject.gameObject.AddComponent( typeof(Rigidbody2D) ); // Gravity and co
 			carriedObject.gameObject.rigidbody2D.mass = 20;
 			carriedObject.gameObject.rigidbody2D.drag = 1.5f;
+			carriedObject = null; //Free Hands
 		}
 		carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
 		//carriedObject.GetComponent<MusicObject>().Deactivate();
-		carriedObject = null; //Free Hands
+
 	}
 
 	void FixedUpdate ()
