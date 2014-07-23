@@ -104,6 +104,7 @@ public class PlayerControl : MonoBehaviour
 				Debug.Log("Slotting");
 				carriedObject.parent = nearbySlot;
 				carriedObject.localPosition = new Vector3( 0f, 1f, 1f); //Slotted Position
+				carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
 				carriedObject = null; //Free Hands
 			}else{
 				Debug.Log("Swapping");
@@ -119,12 +120,13 @@ public class PlayerControl : MonoBehaviour
 			Debug.Log("Dropping");
 			carriedObject.localPosition = new Vector3( 1f, 0.5f, 1f ); 
 			carriedObject.parent = null; // Unparenting
-			carriedObject.gameObject.AddComponent( typeof(Rigidbody2D) ); // Gravity and co
+			carriedObject.gameObject.AddComponent(typeof(Rigidbody2D)); // Gravity and co
 			carriedObject.gameObject.rigidbody2D.mass = 20;
 			carriedObject.gameObject.rigidbody2D.drag = 1.5f;
+			carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
 			carriedObject = null; //Free Hands
 		}
-		carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
+
 		//carriedObject.GetComponent<MusicObject>().Deactivate();
 
 	}
