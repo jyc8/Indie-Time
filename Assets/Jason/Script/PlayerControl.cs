@@ -82,7 +82,7 @@ public class PlayerControl : MonoBehaviour
 		obj.parent = attachObject.transform;
 		obj.localPosition = new Vector3( attachDistX, attachDistY, 1f ); //Attached Position
 		obj.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug workaround, goddam annoying
-		//obj.GetComponent<MusicObject>().Activate();
+		obj.GetComponent<MusicObject>().Deactivate();
 	}
 
 	void PickUp()
