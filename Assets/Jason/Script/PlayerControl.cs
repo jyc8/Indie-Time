@@ -85,7 +85,7 @@ public class PlayerControl : MonoBehaviour
 			// Set the box on top of character
 			Destroy(carriedObject.rigidbody2D);
 			carriedObject.parent = attachObject.transform;
-			carriedObject.localPosition = new Vector3( attachDistX, attachDistY, 1f ); // Might need to change that
+			carriedObject.localPosition = new Vector3( attachDistX, attachDistY, 1f ); //Attached Position
 			carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug workaround, goddam annoying
 			//Change Boolean
 			carriedObject.GetComponent<MusicObject>().Activate();
@@ -97,6 +97,10 @@ public class PlayerControl : MonoBehaviour
 		Transform nearbySlot = findObject(pickUpDist, slotsLayer);
 		if( nearbySlot != null ) // Check if a slotis found
 		{
+			Debug.Log("Slotting");
+			carriedObject.parent = nearbySlot;
+			carriedObject.localPosition = new Vector3( 0f, 1f, 1f); //Slotted Position
+		}else{ //Do this if no slots are found
 			Debug.Log("Dropping");
 			carriedObject.localPosition = new Vector3( 1f, 0.5f, 1f ); 
 			carriedObject.parent = null; // Unparenting
@@ -106,9 +110,9 @@ public class PlayerControl : MonoBehaviour
 			carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
 			//Change Boolean
 			carriedObject.GetComponent<MusicObject>().Deactivate();
-			//Free Hands
-			carriedObject = null;
 		}
+		//Free Hands
+		carriedObject = null;
 
 	}
 
