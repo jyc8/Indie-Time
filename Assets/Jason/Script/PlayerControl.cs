@@ -60,7 +60,7 @@ public class PlayerControl : MonoBehaviour
 	Transform findObject(float distance, int layer){
 		Transform objectFound = null;
 		// Collect every pickups around. Make sure they have a collider and the layer Pickup
-		Collider2D[] objects = Physics2D.OverlapCircleAll( transform.position, distance, layer);
+		Collider2D[] objects = Physics2D.OverlapCircleAll(transform.position, distance, layer);
 		
 		// Find the closest
 		float dist = Mathf.Infinity;
