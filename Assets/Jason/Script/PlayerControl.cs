@@ -21,7 +21,7 @@ public class PlayerControl : MonoBehaviour
 	private Transform carriedObject = null;
 	private int pickupLayer = 1 << 10; //Layer to pickup 10 is Music Objects
 	private int slotsLayer = 1 << 11; //11 is Slots
-	public float pickUpDist = 1f;	
+	public float pickUpDist = 2f;	
 	public GameObject attachObject;
 	public float attachDistX = 0;
 	public float attachDistY = 0;
@@ -97,7 +97,7 @@ public class PlayerControl : MonoBehaviour
 	
 	private void Drop()
 	{
-		Transform nearbySlot = findObject(pickUpDist, slotsLayer);
+		Transform nearbySlot = findObject(3f, slotsLayer);
 		if( nearbySlot != null ) // Check if a slotis found
 		{
 			if(nearbySlot.GetComponent<Slot>().isEmpty()){ //Is the slot empty
@@ -111,6 +111,7 @@ public class PlayerControl : MonoBehaviour
 				Transform slotObject = nearbySlot.GetChild(0);
 				carriedObject.parent = nearbySlot;
 				carriedObject.localPosition = new Vector3( 0f, 1.5f, 1f); //Slotted Position
+				carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
 				Attach(slotObject);
 				carriedObject = slotObject;
 			}

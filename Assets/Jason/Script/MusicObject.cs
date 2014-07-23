@@ -3,6 +3,11 @@ using System.Collections;
 
 public class MusicObject : MonoBehaviour {
 	bool fading = false;
+	public bool nature = false;
+
+	public bool isNature(){
+		return nature;
+	}
 
 	public void Activate(){
 		Debug.Log("Music Object Activated");
