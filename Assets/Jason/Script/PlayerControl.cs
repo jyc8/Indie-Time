@@ -19,7 +19,8 @@ public class PlayerControl : MonoBehaviour
 
 	// An object need to closer than that distance to be picked up.
 	private Transform carriedObject = null;
-	private int pickupLayer = 1 << 10; //Layer to pickup
+	private int pickupLayer = 1 << 10; //Layer to pickup 10 is Music Objects
+	private int slotsLayer = 1 << 11; //11 is Slots
 	public float pickUpDist = 1f;	
 	public GameObject attachObject;
 	public float attachDistX = 0;
@@ -56,23 +57,28 @@ public class PlayerControl : MonoBehaviour
 
 	}
 
-	void PickUp()
-	{		
+	Transform findObject(float distance, int layer){
+		Transform objectFound = null;
 		// Collect every pickups around. Make sure they have a collider and the layer Pickup
-		Collider2D[] pickups = Physics2D.OverlapCircleAll( transform.position, pickUpDist, pickupLayer );
+		Collider2D[] objects = Physics2D.OverlapCircleAll( transform.position, distance, layer);
 		
 		// Find the closest
 		float dist = Mathf.Infinity;
-		for( int i = 0; i < pickups.Length; i++ )
+		for( int i = 0; i < objects.Length; i++ )
 		{
-			float newDist = (transform.position - pickups[i].transform.position).sqrMagnitude;
+			float newDist = (transform.position - objects[i].transform.position).sqrMagnitude;
 			if( newDist < dist )
 			{
-				carriedObject = pickups[i].transform;
+				objectFound = objects[i].transform;
 				dist = newDist;
 			}
 		}
-		
+		return objectFound;
+	}
+
+	void PickUp()
+	{				
+		carriedObject = findObject(pickUpDist, pickupLayer);
 		if( carriedObject != null ) // Check if an item is found
 		{
 			Debug.Log("Picking");

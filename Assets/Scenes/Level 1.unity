@@ -2404,11 +2404,11 @@ Prefab:
 =======
     - target: {fileID: 400000, guid: 3b4af067e9fc54d4d8bc7f35c8f4dd98, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.76810753
+      value: 1.78476942
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3b4af067e9fc54d4d8bc7f35c8f4dd98, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.43733656
+      value: 1.47065902
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3b4af067e9fc54d4d8bc7f35c8f4dd98, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2433,6 +2433,10 @@ Prefab:
     - target: {fileID: 400000, guid: 3b4af067e9fc54d4d8bc7f35c8f4dd98, type: 2}
       propertyPath: m_RootOrder
       value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3b4af067e9fc54d4d8bc7f35c8f4dd98, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b4af067e9fc54d4d8bc7f35c8f4dd98, type: 2}
@@ -2561,7 +2565,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1240830995}
   - 212: {fileID: 1240830994}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Slot
 >>>>>>> FETCH_HEAD
   m_TagString: Untagged
@@ -2627,7 +2631,7 @@ Transform:
   m_PrefabInternal: {fileID: 1183826208}
   m_GameObject: {fileID: 1240830993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.76810753, y: 1.43733656, z: 0}
+  m_LocalPosition: {x: 1.78476942, y: 1.47065902, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
