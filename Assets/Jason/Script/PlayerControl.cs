@@ -82,8 +82,7 @@ public class PlayerControl : MonoBehaviour
 		obj.parent = attachObject.transform;
 		obj.localPosition = new Vector3( attachDistX, attachDistY, 1f ); //Attached Position
 		obj.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug workaround, goddam annoying
-		//Change Boolean
-		obj.GetComponent<MusicObject>().Activate();
+		//obj.GetComponent<MusicObject>().Activate();
 	}
 
 	void PickUp()
@@ -109,6 +108,7 @@ public class PlayerControl : MonoBehaviour
 			}
 			carriedObject.parent = nearbySlot;
 			carriedObject.localPosition = new Vector3( 0f, 1f, 1f); //Slotted Position
+			nearbySlot.parent.GetComponent<MusicMachine>().UpdateSlots();
 		}else{ //Do this if no slots are found
 			Debug.Log("Dropping");
 			carriedObject.localPosition = new Vector3( 1f, 0.5f, 1f ); 
@@ -118,9 +118,8 @@ public class PlayerControl : MonoBehaviour
 			carriedObject.gameObject.rigidbody2D.drag = 1.5f;
 		}
 		carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
-		carriedObject.GetComponent<MusicObject>().Deactivate();
-		//Free Hands
-		carriedObject = null;
+		//carriedObject.GetComponent<MusicObject>().Deactivate();
+		carriedObject = null; //Free Hands
 	}
 
 	void FixedUpdate ()
