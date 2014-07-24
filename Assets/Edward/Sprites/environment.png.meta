@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ad70454f8d669465a857ae34e7e865b7
+guid: cbed73cbb771e48baadecc88494c4f9b
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -24,13 +24,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -44,6 +44,33 @@ TextureImporter:
     textureFormat: -2
     compressionQuality: 50
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Pickup Sign
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 277
+        height: 186
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Jump Sign
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 0
+        width: 212
+        height: 186
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Lamp Post
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 631
+        width: 75
+        height: 339
+      alignment: 0
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 
