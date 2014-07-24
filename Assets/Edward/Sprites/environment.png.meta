@@ -72,5 +72,14 @@ TextureImporter:
         height: 339
       alignment: 0
       pivot: {x: .5, y: .5}
+    - name: Tree
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 692
+        width: 181
+        height: 283
+      alignment: 0
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 
