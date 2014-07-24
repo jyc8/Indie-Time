@@ -24239,7 +24239,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1567697934}
   - 212: {fileID: 1567697933}
-  - 95: {fileID: 1567697932}
+  - 111: {fileID: 1567697932}
   m_Layer: 0
   m_Name: Lamp Post
   m_TagString: Untagged
@@ -24247,20 +24247,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &1567697932
-Animator:
-  serializedVersion: 2
+--- !u!111 &1567697932
+Animation:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1567697931}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_ApplyRootMotion: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: aad09b505718b4eb8969917975e0d38a, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: aad09b505718b4eb8969917975e0d38a, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
   m_AnimatePhysics: 0
-  m_HasTransformHierarchy: 1
+  m_CullingType: 0
 --- !u!212 &1567697933
 SpriteRenderer:
   m_ObjectHideFlags: 0
