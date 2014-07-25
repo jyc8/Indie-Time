@@ -81,5 +81,23 @@ TextureImporter:
         height: 283
       alignment: 0
       pivot: {x: .5, y: .5}
+    - name: Blue Gem
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 369
+        width: 91
+        height: 126
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Orange Gem
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 369
+        width: 91
+        height: 126
+      alignment: 0
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 
