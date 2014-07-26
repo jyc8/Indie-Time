@@ -48,7 +48,7 @@ TextureImporter:
     - name: Pickup Sign
       rect:
         serializedVersion: 2
-        x: 29
+        x: 9
         y: 0
         width: 277
         height: 186
@@ -57,7 +57,7 @@ TextureImporter:
     - name: Jump Sign
       rect:
         serializedVersion: 2
-        x: 358
+        x: 338
         y: 0
         width: 212
         height: 186
@@ -66,7 +66,7 @@ TextureImporter:
     - name: Lamp Post
       rect:
         serializedVersion: 2
-        x: 742
+        x: 722
         y: 631
         width: 75
         height: 339
@@ -76,15 +76,15 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 692
-        width: 181
-        height: 283
+        y: 707
+        width: 168
+        height: 268
       alignment: 0
       pivot: {x: .5, y: .5}
     - name: Blue Gem
       rect:
         serializedVersion: 2
-        x: 185
+        x: 165
         y: 369
         width: 91
         height: 126
@@ -93,10 +93,37 @@ TextureImporter:
     - name: Orange Gem
       rect:
         serializedVersion: 2
-        x: 41
+        x: 21
         y: 369
         width: 91
         height: 126
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Building Short
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 306
+        width: 232
+        height: 215
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Building Tall
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 667
+        width: 140
+        height: 298
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Nuclear
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 675
+        width: 246
+        height: 270
       alignment: 0
       pivot: {x: .5, y: .5}
   spritePackingTag: 
