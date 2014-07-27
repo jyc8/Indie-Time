@@ -15843,7 +15843,6 @@ GameObject:
   - 4: {fileID: 1156052810}
   - 212: {fileID: 1156052816}
   - 50: {fileID: 1156052815}
-  - 58: {fileID: 1156052814}
   - 82: {fileID: 1156052813}
   - 114: {fileID: 1156052812}
   - 61: {fileID: 1156052811}
@@ -15950,18 +15949,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!58 &1156052814
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5800000, guid: 42a9d11dd1a6f4cb5a69dcc34fe118da,
-    type: 2}
-  m_PrefabInternal: {fileID: 2013367410}
-  m_GameObject: {fileID: 1156052809}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Radius: .524999976
-  m_Center: {x: 0, y: 0}
 --- !u!50 &1156052815
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -21714,7 +21701,7 @@ SpriteRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6c1543edd52d4eb48bcc78c0f85715e6, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -23985,7 +23972,6 @@ GameObject:
   - 4: {fileID: 1731851007}
   - 212: {fileID: 1731851006}
   - 50: {fileID: 1731851005}
-  - 58: {fileID: 1731851004}
   - 82: {fileID: 1731851003}
   - 114: {fileID: 1731851002}
   - 61: {fileID: 1731851001}
@@ -24080,18 +24066,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!58 &1731851004
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5800000, guid: 42a9d11dd1a6f4cb5a69dcc34fe118da,
-    type: 2}
-  m_PrefabInternal: {fileID: 1579631349}
-  m_GameObject: {fileID: 1731851000}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Radius: .524999976
-  m_Center: {x: 0, y: 0}
 --- !u!50 &1731851005
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -29264,6 +29238,14 @@ Prefab:
     - target: {fileID: 5800000, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
       propertyPath: m_Center.y
       value: -.649999976
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
