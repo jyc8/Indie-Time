@@ -6,6 +6,11 @@ TextureImporter:
     21300002: Jump Sign
     21300004: Lamp Post
     21300006: Tree
+    21300008: Blue Gem
+    21300010: Orange Gem
+    21300012: Building Short
+    21300014: Building Tall
+    21300016: Nuclear
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -90,6 +95,7 @@ TextureImporter:
         height: 268
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Blue Gem
       rect:
         serializedVersion: 2
@@ -99,6 +105,7 @@ TextureImporter:
         height: 126
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Orange Gem
       rect:
         serializedVersion: 2
@@ -108,6 +115,7 @@ TextureImporter:
         height: 126
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Building Short
       rect:
         serializedVersion: 2
@@ -117,6 +125,7 @@ TextureImporter:
         height: 215
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Building Tall
       rect:
         serializedVersion: 2
@@ -126,6 +135,7 @@ TextureImporter:
         height: 298
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Nuclear
       rect:
         serializedVersion: 2
