@@ -6863,7 +6863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingRight: 1
   jump: 0
-  moveForce: 365
+  moveForce: 80
   maxSpeed: 8
   jumpClips:
   - {fileID: 8300000, guid: 8dddb4227f48f9343ba7954cd4089345, type: 3}
@@ -31120,6 +31120,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
       propertyPath: pickUpDist
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
+      propertyPath: moveForce
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
