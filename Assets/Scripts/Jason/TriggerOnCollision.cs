@@ -4,12 +4,13 @@ using System.Collections;
 public class TriggerOnCollision : MonoBehaviour {
 	private bool triggered = false;
 	public bool triggerOnce = false;
+	public bool enableTrigger = false;
+	public GameObject target;
 	public bool audioTrigger = false;
 	public bool loadLevel = false;
 	public string level = "Scene Name";
-	public bool pauseScript = false;
-	public GameObject target;
-	public string scriptName;
+	public bool pauseMovement = false;
+	public GameObject Player;
 	public float time;
 	public bool warp = false;
 	public float warpDistance;
@@ -31,8 +32,15 @@ public class TriggerOnCollision : MonoBehaviour {
 			if (audioTrigger){
 				audio.Play();
 			}
-			if (pauseScript){
-				target.GetComponent<scriptName>().enabled = false;
+			if (enableTrigger){
+				target.SetActive(true);
+				if(time > 0){
+					StartCoroutine(LifeTime());
+				}
+			}
+			if (pauseMovement){
+				Player.GetComponent<PlayerControl>().enabled = false;
+				Player.GetComponent<Animator>().enabled = false;
 				StartCoroutine(TimeOut());
 			}
 			triggered = true;
@@ -41,10 +49,13 @@ public class TriggerOnCollision : MonoBehaviour {
 	}
 
 	IEnumerator TimeOut(){
-		for (float i = 5; i > 0; i--){
-			audio.volume = audio.volume - audio.volume * 0.3f;
-			yield return new WaitForSeconds (0.3f);
-		}
-		audio.Stop();
+		yield return new WaitForSeconds (time);
+		Player.GetComponent<PlayerControl>().enabled = true;
+		Player.GetComponent<Animator>().enabled = true;
+	}
+
+	IEnumerator LifeTime(){
+		yield return new WaitForSeconds (time);
+		target.SetActive(false);
 	}
 }
