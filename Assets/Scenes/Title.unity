@@ -396,11 +396,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 88324f760c579473199bfbc4f1073097, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.24254036
+      value: .038000524
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 88324f760c579473199bfbc4f1073097, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.36255121
+      value: -2.54766178
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 88324f760c579473199bfbc4f1073097, type: 2}
       propertyPath: m_LocalPosition.z
@@ -421,6 +421,30 @@ Prefab:
     - target: {fileID: 400000, guid: 88324f760c579473199bfbc4f1073097, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200000, guid: 88324f760c579473199bfbc4f1073097, type: 2}
+      propertyPath: colorAnimation[0].rgba
+      value: 16777215
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200000, guid: 88324f760c579473199bfbc4f1073097, type: 2}
+      propertyPath: colorAnimation[1].rgba
+      value: 485683954
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200000, guid: 88324f760c579473199bfbc4f1073097, type: 2}
+      propertyPath: colorAnimation[2].rgba
+      value: 602400743
+      objectReference: {fileID: 0}
+    - target: {fileID: 1500000, guid: 88324f760c579473199bfbc4f1073097, type: 2}
+      propertyPath: maxSize
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1500000, guid: 88324f760c579473199bfbc4f1073097, type: 2}
+      propertyPath: maxEmission
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1500000, guid: 88324f760c579473199bfbc4f1073097, type: 2}
+      propertyPath: minSize
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88324f760c579473199bfbc4f1073097, type: 2}
@@ -514,13 +538,13 @@ ParticleAnimator:
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
-    rgba: 13290186
+    rgba: 16777215
   colorAnimation[1]:
     serializedVersion: 2
-    rgba: 482920648
+    rgba: 485683954
   colorAnimation[2]:
     serializedVersion: 2
-    rgba: 596479373
+    rgba: 602400743
   colorAnimation[3]:
     serializedVersion: 2
     rgba: 263632566
@@ -545,12 +569,12 @@ EllipsoidParticleEmitter:
   serializedVersion: 2
   m_Enabled: 1
   m_Emit: 1
-  minSize: 4
-  maxSize: 5
+  minSize: 5
+  maxSize: 7
   minEnergy: 3
   maxEnergy: 3
   minEmission: 25
-  maxEmission: 35
+  maxEmission: 45
   worldVelocity: {x: 0, y: 0, z: 0}
   localVelocity: {x: .800000012, y: 0, z: 0}
   rndVelocity: {x: .00999999978, y: .0299999993, z: .00999999978}
@@ -570,7 +594,7 @@ Transform:
   m_PrefabInternal: {fileID: 1162342227}
   m_GameObject: {fileID: 1606784961}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.24254036, y: -3.36255121, z: 0}
+  m_LocalPosition: {x: .038000524, y: -2.54766178, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
