@@ -220,10 +220,10 @@ TextureImporter:
     - name: Steel Tile
       rect:
         serializedVersion: 2
-        x: 1617
-        y: 791
-        width: 239
-        height: 239
+        x: 1626
+        y: 800
+        width: 217
+        height: 217
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
