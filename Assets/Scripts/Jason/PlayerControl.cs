@@ -83,6 +83,7 @@ public class PlayerControl : MonoBehaviour
 		obj.localPosition = new Vector3( attachDistX, attachDistY, 1f ); //Attached Position
 		obj.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug workaround, goddam annoying
 		obj.GetComponent<MusicObject>().Deactivate();
+		obj.collider2D.enabled = false;
 	}
 
 	void PickUp()
@@ -105,6 +106,7 @@ public class PlayerControl : MonoBehaviour
 	private void Drop()
 	{
 		Transform nearbySlot = findObject(3f, slotsLayer);
+		carriedObject.collider2D.enabled = true;
 		if( nearbySlot != null ) // Check if a slot is found
 		{	
 			Transform slotObject;
