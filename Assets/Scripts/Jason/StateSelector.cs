@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnvironmentStateSelector : MonoBehaviour {
+public class StateSelector : MonoBehaviour {
 	protected Animator animator;
 
 	// Use this for initialization
@@ -15,11 +15,15 @@ public class EnvironmentStateSelector : MonoBehaviour {
 		if(animator)
 		{
 			if(Input.GetButton("Action")) {
-				animator.SetBool("Pop", true );
+				//animator.SetBool("Pop", true );
 			}
 			if(Input.GetButton("Jump")){
 				animator.SetBool("Pop", false );
 			}
 		}       
 	}        
+
+	public void Pop(){
+		animator.SetBool("Pop", true );
+	}
 }

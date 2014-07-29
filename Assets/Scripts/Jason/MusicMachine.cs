@@ -5,11 +5,18 @@ public class MusicMachine : MonoBehaviour {
 	public GameObject[] nature;
 	public GameObject[] machine;
 
+	void PopChildren(Transform TriggerObject){
+		if (TriggerObject.childCount > 0){
+			for (int i = 0; i < TriggerObject.childCount; i++){
+				TriggerObject.GetChild(i).GetComponent<StateSelector>().Pop();
+				PopChildren(TriggerObject.GetChild(i));
+			}
+		}
+	}
+
 	void TriggerEvents(int n, int m){
 		for (int i = 0; i < n; i++){
-			if (nature[i] != null){
-				nature[i].SetActive(true);
-			}
+			PopChildren(nature[i].transform);
 		}
 		for (int j = n; j < nature.Length; j++){
 			if (nature[j] != null){
@@ -17,9 +24,7 @@ public class MusicMachine : MonoBehaviour {
 			}
 		}
 		for (int i = 0; i < m; i++){
-			if (machine[i] != null){
-				machine[i].SetActive(true);
-			}
+			PopChildren(machine[i].transform);
 		}
 		for (int j = m; j < machine.Length; j++){
 			if (machine[j] != null){
@@ -42,6 +47,6 @@ public class MusicMachine : MonoBehaviour {
 				}
 			}
 		}
-		TriggerEvents(natureCount, machineCount);
+		//TriggerEvents(natureCount, machineCount);
 	}
 }
