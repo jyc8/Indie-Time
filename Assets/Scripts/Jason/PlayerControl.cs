@@ -60,13 +60,13 @@ public class PlayerControl : MonoBehaviour
 	Transform findObject(float distance, int layer){
 		Transform objectFound = null;
 		// Collect every pickups around. Make sure they have a collider and the layer Pickup
-		Collider2D[] objects = Physics2D.OverlapCircleAll(transform.position, distance, layer);
+		Collider2D[] objects = Physics2D.OverlapCircleAll(attachObject.transform.position, distance, layer);
 		
 		// Find the closest
 		float dist = Mathf.Infinity;
 		for( int i = 0; i < objects.Length; i++ )
 		{
-			float newDist = (transform.position - objects[i].transform.position).sqrMagnitude;
+			float newDist = (attachObject.transform.position - objects[i].transform.position).sqrMagnitude;
 			if( newDist < dist )
 			{
 				objectFound = objects[i].transform;
@@ -105,31 +105,36 @@ public class PlayerControl : MonoBehaviour
 	private void Drop()
 	{
 		Transform nearbySlot = findObject(3f, slotsLayer);
-		if( nearbySlot != null ) // Check if a slotis found
-		{
+		if( nearbySlot != null ) // Check if a slot is found
+		{	
+			Transform slotObject;
 			if(nearbySlot.GetComponent<Slot>().isEmpty()){ //Is the slot empty
 				Debug.Log("Slotting");
-				carriedObject.parent = nearbySlot;
-				carriedObject.localPosition = new Vector3( 0f, 1.5f, 1f); //Slotted Position
-				carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
-				carriedObject = null; //Free Hands
+				slotObject = null; // Free Hands
 			}else{
 				Debug.Log("Swapping");
-				Transform slotObject = nearbySlot.GetChild(0);
-				carriedObject.parent = nearbySlot;
-				carriedObject.localPosition = new Vector3( 0f, 1.5f, 1f); //Slotted Position
-				carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
-				Attach(slotObject);
-				carriedObject = slotObject;
+				slotObject = nearbySlot.GetChild(0);
+				Attach(slotObject); //Grab Gem
+
 			}
+			//Transfer Old Gem to Slot
+			carriedObject.parent = nearbySlot;
+			carriedObject.localPosition = new Vector3( 0f, 1.5f, 1f); //Slotted Position
+			carriedObject.localRotation = Quaternion.identity; //Slotted Rotation
+			carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
+			//Set Current Carried Object
+			carriedObject = slotObject;
+			//Update Machine Changes
 			nearbySlot.parent.GetComponent<MusicMachine>().UpdateSlots();
 		}else{ //Do this if no slots are found
 			Debug.Log("Dropping");
 			carriedObject.localPosition = new Vector3( 1f, 0.5f, 1f ); 
 			carriedObject.parent = null; // Unparenting
-			carriedObject.gameObject.AddComponent(typeof(Rigidbody2D)); // Gravity and co
+			//Add Rigid Body Back
+			carriedObject.gameObject.AddComponent(typeof(Rigidbody2D));
 			carriedObject.gameObject.rigidbody2D.mass = 20;
 			carriedObject.gameObject.rigidbody2D.drag = 1.5f;
+			//End of Rigid Body Settings
 			carriedObject.localScale = new Vector3( 1f, 1f, 1f ); //Due to Unity -1 scale bug
 			carriedObject = null; //Free Hands
 		}
