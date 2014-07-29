@@ -101,6 +101,7 @@ Transform:
   m_Children:
   - {fileID: 294172298}
   m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1 &149523668
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +211,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 4
 --- !u!1 &294172297
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +239,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 45083370}
+  m_RootOrder: 0
 --- !u!114 &294172299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,8 +319,11 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
   m_HDR: 0
   m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!4 &576407612
 Transform:
   m_ObjectHideFlags: 0
@@ -329,6 +335,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1749984392}
+  m_RootOrder: 0
 --- !u!82 &576407613
 AudioSource:
   m_ObjectHideFlags: 0
@@ -478,6 +485,7 @@ Transform:
   m_Children:
   - {fileID: 1972471154}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!1 &1606784961
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,9 +523,8 @@ ParticleRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
   serializedVersion: 2
   m_CameraVelocityScale: 2
   m_StretchParticles: 0
@@ -598,6 +605,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1 &1749984391
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +633,7 @@ Transform:
   m_Children:
   - {fileID: 576407612}
   m_Father: {fileID: 0}
+  m_RootOrder: 2
 --- !u!1 &1972471152
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,9 +668,8 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 75aea5290e22c4ee691889a8db7bf86d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1972471154
@@ -675,3 +683,4 @@ Transform:
   m_LocalScale: {x: 1.05063856, y: 1.05063975, z: 1}
   m_Children: []
   m_Father: {fileID: 1283845929}
+  m_RootOrder: 0

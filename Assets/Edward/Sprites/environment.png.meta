@@ -11,6 +11,17 @@ TextureImporter:
     21300012: Building Short
     21300014: Building Tall
     21300016: Nuclear
+    21300018: Fan
+    21300020: Tree 2
+    21300022: Mushroom
+    21300024: Cog
+    21300026: Elevator
+    21300028: Elevator Frame
+    21300030: Steel Tile
+    21300032: Pipe
+    21300034: Steel Gate Left
+    21300036: Steel Gate Right
+    21300038: Steel Slope
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -60,7 +71,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 9
-        y: 0
+        y: 526
         width: 277
         height: 186
       alignment: 0
@@ -69,8 +80,8 @@ TextureImporter:
     - name: Jump Sign
       rect:
         serializedVersion: 2
-        x: 338
-        y: 0
+        x: 337
+        y: 526
         width: 212
         height: 186
       alignment: 0
@@ -79,8 +90,8 @@ TextureImporter:
     - name: Lamp Post
       rect:
         serializedVersion: 2
-        x: 722
-        y: 631
+        x: 721
+        y: 1156
         width: 75
         height: 339
       alignment: 0
@@ -90,7 +101,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 707
+        y: 1233
         width: 168
         height: 268
       alignment: 9
@@ -99,8 +110,8 @@ TextureImporter:
     - name: Blue Gem
       rect:
         serializedVersion: 2
-        x: 165
-        y: 369
+        x: 164
+        y: 895
         width: 91
         height: 126
       alignment: 0
@@ -110,7 +121,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 21
-        y: 369
+        y: 895
         width: 91
         height: 126
       alignment: 0
@@ -119,8 +130,8 @@ TextureImporter:
     - name: Building Short
       rect:
         serializedVersion: 2
-        x: 444
-        y: 306
+        x: 443
+        y: 831
         width: 232
         height: 215
       alignment: 0
@@ -129,20 +140,130 @@ TextureImporter:
     - name: Building Tall
       rect:
         serializedVersion: 2
-        x: 492
-        y: 667
-        width: 140
-        height: 298
+        x: 491
+        y: 1192
+        width: 142
+        height: 300
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Nuclear
       rect:
         serializedVersion: 2
-        x: 189
-        y: 675
+        x: 188
+        y: 1203
         width: 246
-        height: 270
+        height: 269
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Fan
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 828
+        width: 239
+        height: 184
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tree 2
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1232
+        width: 170
+        height: 268
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mushroom
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 1195
+        width: 308
+        height: 257
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cog
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 657
+        width: 391
+        height: 391
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Elevator
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 179
+        width: 195
+        height: 340
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Elevator Frame
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 76
+        width: 261
+        height: 594
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Steel Tile
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 791
+        width: 239
+        height: 239
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Pipe
+      rect:
+        serializedVersion: 2
+        x: 1942
+        y: 800
+        width: 236
+        height: 241
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Steel Gate Left
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 1178
+        width: 559
+        height: 239
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Steel Gate Right
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 1178
+        width: 548
+        height: 239
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Steel Slope
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 772
+        width: 620
+        height: 281
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
