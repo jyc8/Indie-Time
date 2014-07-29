@@ -15,7 +15,7 @@ public class StateSelector : MonoBehaviour {
 		if(animator)
 		{
 			if(Input.GetButton("Action")) {
-				//animator.SetBool("Pop", true );
+				//Pop ();
 			}
 			if(Input.GetButton("Jump")){
 				animator.SetBool("Pop", false );
@@ -23,7 +23,7 @@ public class StateSelector : MonoBehaviour {
 		}       
 	}        
 
-	public void Pop(){
-		animator.SetBool("Pop", true );
+	public void Pop(bool Bool){
+		animator.SetBool("Pop", Bool);
 	}
 }
