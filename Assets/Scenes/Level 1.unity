@@ -21878,6 +21878,10 @@ MonoBehaviour:
   audioTrigger: 0
   loadLevel: 1
   level: Level 2
+  pauseScript: 0
+  target: {fileID: 0}
+  scriptName: 
+  time: 0
   warp: 0
   warpDistance: 0
   warpHeight: 0
@@ -23806,6 +23810,10 @@ MonoBehaviour:
   audioTrigger: 0
   loadLevel: 0
   level: Scene Name
+  pauseScript: 0
+  target: {fileID: 0}
+  scriptName: 
+  time: 0
   warp: 1
   warpDistance: -8
   warpHeight: 8
@@ -26412,6 +26420,10 @@ MonoBehaviour:
   audioTrigger: 1
   loadLevel: 0
   level: Scene Name
+  pauseScript: 0
+  target: {fileID: 528641004}
+  scriptName: PlayerControl
+  time: 2
   warp: 0
   warpDistance: 0
   warpHeight: 0
@@ -27263,6 +27275,10 @@ MonoBehaviour:
   audioTrigger: 0
   loadLevel: 1
   level: Level 2
+  pauseScript: 0
+  target: {fileID: 0}
+  scriptName: 
+  time: 0
   warp: 0
   warpDistance: 0
   warpHeight: 0
@@ -30569,6 +30585,10 @@ MonoBehaviour:
   audioTrigger: 1
   loadLevel: 0
   level: Scene Name
+  pauseScript: 0
+  target: {fileID: 0}
+  scriptName: 
+  time: 0
   warp: 0
   warpDistance: 0
   warpHeight: 0

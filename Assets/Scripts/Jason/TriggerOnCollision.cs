@@ -7,6 +7,10 @@ public class TriggerOnCollision : MonoBehaviour {
 	public bool audioTrigger = false;
 	public bool loadLevel = false;
 	public string level = "Scene Name";
+	public bool pauseScript = false;
+	public GameObject target;
+	public string scriptName;
+	public float time;
 	public bool warp = false;
 	public float warpDistance;
 	public float warpHeight;
@@ -27,8 +31,20 @@ public class TriggerOnCollision : MonoBehaviour {
 			if (audioTrigger){
 				audio.Play();
 			}
+			if (pauseScript){
+				target.GetComponent<scriptName>().enabled = false;
+				StartCoroutine(TimeOut());
+			}
 			triggered = true;
 		}
 
-	} 
+	}
+
+	IEnumerator TimeOut(){
+		for (float i = 5; i > 0; i--){
+			audio.volume = audio.volume - audio.volume * 0.3f;
+			yield return new WaitForSeconds (0.3f);
+		}
+		audio.Stop();
+	}
 }
