@@ -25,17 +25,12 @@ public class MusicMachine : MonoBehaviour {
 		for (int j = n; j < nature.Length; j++){
 			PopChildren(nature[j].transform, false);
 		}
-
-		/*
 		for (int i = 0; i < m; i++){
-			PopChildren(machine[i].transform);
+			PopChildren(machine[i].transform, true);
 		}
 		for (int j = m; j < machine.Length; j++){
-			if (machine[j] != null){
-				machine[j].SetActive(false);
-			}
+			PopChildren(machine[j].transform, false);
 		}
-		*/
 	}
 
 

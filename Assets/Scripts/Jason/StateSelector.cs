@@ -12,15 +12,17 @@ public class StateSelector : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		/* Debug Scripts
 		if(animator)
 		{
 			if(Input.GetButton("Action")) {
-				//Pop ();
+				Pop(true);
 			}
 			if(Input.GetButton("Jump")){
-				animator.SetBool("Pop", false );
+				Pop(false);
 			}
 		}       
+		*/
 	}        
 
 	public void Pop(bool Bool){
