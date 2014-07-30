@@ -14128,6 +14128,18 @@ Prefab:
       propertyPath: m_Name
       value: Teleporter
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: babffe607d27de3408a09b189235373b, type: 2}
+      propertyPath: positive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: babffe607d27de3408a09b189235373b, type: 2}
+      propertyPath: levelNumber
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: babffe607d27de3408a09b189235373b, type: 2}
+      propertyPath: levelName
+      value: Level 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: babffe607d27de3408a09b189235373b, type: 2}
   m_RootGameObject: {fileID: 1537464466}
@@ -23704,12 +23716,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOnce: 0
-  enableTrigger: 0
+  setActiveTrigger: 0
   target: {fileID: 0}
   audioTrigger: 0
   loadLevel: 1
-  positive: 0
-  level: Level 2
+  positive: 1
+  currentLevelNumber: 0
+  levelName: Level 2
   pauseMovement: 0
   Player: {fileID: 0}
   time: 0
@@ -25694,12 +25707,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOnce: 0
-  enableTrigger: 0
+  setActiveTrigger: 0
   target: {fileID: 0}
   audioTrigger: 0
   loadLevel: 0
   positive: 0
-  level: Scene Name
+  currentLevelNumber: 0
+  levelName: Scene Name
   pauseMovement: 0
   Player: {fileID: 0}
   time: 0
@@ -28438,12 +28452,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOnce: 1
-  enableTrigger: 1
+  setActiveTrigger: 1
   target: {fileID: 1345063158}
   audioTrigger: 1
   loadLevel: 0
   positive: 0
-  level: Scene Name
+  currentLevelNumber: 0
+  levelName: Scene Name
   pauseMovement: 0
   Player: {fileID: 0}
   time: 4
@@ -29345,12 +29360,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOnce: 0
-  enableTrigger: 0
+  setActiveTrigger: 0
   target: {fileID: 0}
   audioTrigger: 0
   loadLevel: 1
   positive: 0
-  level: Level 2
+  currentLevelNumber: 0
+  levelName: Level 2
   pauseMovement: 0
   Player: {fileID: 0}
   time: 0
@@ -32787,12 +32803,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOnce: 1
-  enableTrigger: 1
+  setActiveTrigger: 1
   target: {fileID: 1334802192}
   audioTrigger: 1
   loadLevel: 0
   positive: 0
-  level: Scene Name
+  currentLevelNumber: 0
+  levelName: Scene Name
   pauseMovement: 1
   Player: {fileID: 528641004}
   time: 4

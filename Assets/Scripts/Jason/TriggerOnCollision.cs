@@ -4,12 +4,13 @@ using System.Collections;
 public class TriggerOnCollision : MonoBehaviour {
 	private bool triggered = false;
 	public bool triggerOnce = false;
-	public bool enableTrigger = false;
+	public bool setActiveTrigger = false;
 	public GameObject target;
 	public bool audioTrigger = false;
 	public bool loadLevel = false;
 	public bool positive = false;
-	public string level = "Scene Name";
+	public int currentLevelNumber;
+	public string levelName = "Scene Name";
 	public bool pauseMovement = false;
 	public GameObject Player;
 	public float time;
@@ -24,7 +25,8 @@ public class TriggerOnCollision : MonoBehaviour {
 			
 		} else{
 			if (loadLevel){
-				Application.LoadLevel(level);
+				GlobalVariable.Positive[currentLevelNumber] = positive;
+				Application.LoadLevel(levelName);
 			}
 			if (warp){
 				Debug.Log("Warping.");
@@ -33,7 +35,7 @@ public class TriggerOnCollision : MonoBehaviour {
 			if (audioTrigger){
 				audio.Play();
 			}
-			if (enableTrigger){
+			if (setActiveTrigger){
 				target.SetActive(true);
 				if(time > 0){
 					StartCoroutine(LifeTime());
