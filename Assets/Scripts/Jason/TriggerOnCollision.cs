@@ -8,6 +8,7 @@ public class TriggerOnCollision : MonoBehaviour {
 	public GameObject target;
 	public bool audioTrigger = false;
 	public bool loadLevel = false;
+	public bool positive = false;
 	public string level = "Scene Name";
 	public bool pauseMovement = false;
 	public GameObject Player;
