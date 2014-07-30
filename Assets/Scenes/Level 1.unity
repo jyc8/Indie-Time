@@ -9115,6 +9115,7 @@ GameObject:
   - 4: {fileID: 686411414}
   - 114: {fileID: 686411415}
   - 114: {fileID: 686411416}
+  - 114: {fileID: 686411417}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -9160,6 +9161,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 634d741af15345f44b49a539c3239527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &686411417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 686411413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48571f25d306984b80f7502e885c1e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &687969898
@@ -20612,6 +20624,7 @@ GameObject:
   - 212: {fileID: 1341986828}
   - 82: {fileID: 1341986830}
   - 95: {fileID: 1341986831}
+  - 114: {fileID: 1341986832}
   m_Layer: 0
   m_Name: Blank
   m_TagString: Untagged
@@ -20726,6 +20739,17 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+--- !u!114 &1341986832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1341986827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c002424132d7446879a32e45fcb157, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1342849188
 GameObject:
   m_ObjectHideFlags: 0
@@ -24823,11 +24847,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 42a9d11dd1a6f4cb5a69dcc34fe118da, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 19.2966461
+      value: 18.9127598
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 42a9d11dd1a6f4cb5a69dcc34fe118da, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.73848963
+      value: 1.77338827
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 42a9d11dd1a6f4cb5a69dcc34fe118da, type: 2}
       propertyPath: m_LocalPosition.z
@@ -27127,7 +27151,7 @@ Transform:
   m_PrefabInternal: {fileID: 1579631349}
   m_GameObject: {fileID: 1731851000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.2966461, y: 1.73848963, z: 0}
+  m_LocalPosition: {x: 18.9127598, y: 1.77338827, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1854798432}
@@ -28513,6 +28537,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6397dc7b1fa440c459978cd9b430115e, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6397dc7b1fa440c459978cd9b430115e, type: 2}
   m_RootGameObject: {fileID: 744532446}
@@ -28593,9 +28621,10 @@ GameObject:
   - 4: {fileID: 1819558982}
   - 61: {fileID: 1819558981}
   - 114: {fileID: 1819558980}
+  - 114: {fileID: 1819558983}
   - 82: {fileID: 1819558979}
   m_Layer: 0
-  m_Name: AudioTrigger
+  m_Name: AudioTrigger2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28707,6 +28736,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 418132522}
   m_RootOrder: 1
+--- !u!114 &1819558983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1819558978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed0dfb50fb14684782c130c359f4e91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerOnce: 1
+  setActiveTrigger: 1
+  target: {fileID: 1345063158}
+  audioTrigger: 1
+  loadLevel: 0
+  positive: 0
+  currentLevelNumber: 0
+  levelName: Scene Name
+  pauseMovement: 1
+  Player: {fileID: 528641004}
+  time: 3
+  warp: 0
+  warpDistance: 0
+  warpHeight: 0
 --- !u!1 &1826323816
 GameObject:
   m_ObjectHideFlags: 0
@@ -32908,7 +32962,7 @@ GameObject:
   - 114: {fileID: 2114659121}
   - 82: {fileID: 2114659118}
   m_Layer: 0
-  m_Name: AudioTrigger
+  m_Name: AudioTrigger1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
