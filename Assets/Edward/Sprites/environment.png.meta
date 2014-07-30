@@ -240,20 +240,20 @@ TextureImporter:
     - name: Steel Gate Left
       rect:
         serializedVersion: 2
-        x: 1555
-        y: 1178
-        width: 559
-        height: 239
+        x: 1565
+        y: 1188
+        width: 517
+        height: 219
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Steel Gate Right
       rect:
         serializedVersion: 2
-        x: 2114
-        y: 1178
-        width: 548
-        height: 239
+        x: 2082
+        y: 1188
+        width: 499
+        height: 219
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

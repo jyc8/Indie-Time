@@ -1481,7 +1481,7 @@ Transform:
   - {fileID: 491212418}
   - {fileID: 1427882308}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!95 &528641006
 Animator:
   serializedVersion: 3
@@ -2411,7 +2411,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fc7acbc064f7c6e47bc0c021d0c0962c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 361e1e5d552ad444fb688b5203c01caa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &922760027
 Transform:
@@ -2536,7 +2536,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!1001 &983004413
 Prefab:
   m_ObjectHideFlags: 0
@@ -2578,7 +2578,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 37a2e5f523a94fc49ba1ce532cdeea9a, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37a2e5f523a94fc49ba1ce532cdeea9a, type: 2}
@@ -2637,11 +2637,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOnce: 0
-  enableTrigger: 0
+  setActiveTrigger: 0
   target: {fileID: 0}
   audioTrigger: 0
   loadLevel: 1
-  level: Level 4
+  positive: 0
+  currentLevelNumber: 0
+  levelName: Scene Name
   pauseMovement: 0
   Player: {fileID: 0}
   time: 0
@@ -4572,7 +4574,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
 --- !u!1 &1642106658
 GameObject:
   m_ObjectHideFlags: 0
@@ -4815,11 +4817,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerOnce: 0
-  enableTrigger: 0
+  setActiveTrigger: 0
   target: {fileID: 0}
   audioTrigger: 0
   loadLevel: 0
-  level: Scene Name
+  positive: 0
+  currentLevelNumber: 0
+  levelName: Scene Name
   pauseMovement: 0
   Player: {fileID: 0}
   time: 0
@@ -5213,7 +5217,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 37a2e5f523a94fc49ba1ce532cdeea9a, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37a2e5f523a94fc49ba1ce532cdeea9a, type: 2}
@@ -6060,7 +6064,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!1 &2018827018
 GameObject:
   m_ObjectHideFlags: 0
@@ -6264,7 +6268,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fc7acbc064f7c6e47bc0c021d0c0962c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 361e1e5d552ad444fb688b5203c01caa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &2102371196
 Transform:
