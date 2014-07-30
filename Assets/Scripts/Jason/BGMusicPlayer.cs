@@ -5,11 +5,12 @@ public class BGMusicPlayer : MonoBehaviour {
 	public int Stage;
 	// Use this for initialization
 	void Start () {
-		//Debug
+		/*Debug
 		GlobalVariable.Positive[0] = true;
 		GlobalVariable.Positive[1] = false;
 		GlobalVariable.Positive[2] = false;
 		GlobalVariable.Positive[3] = true;
+		*/
 		PlayMusic();
 	}
 

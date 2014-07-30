@@ -5695,7 +5695,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 6435361ce506c2d418c14c81addeda5c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .5
+  m_Volume: .200000003
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -7097,7 +7097,7 @@ Transform:
   - {fileID: 491212418}
   - {fileID: 1427882308}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!95 &528641006
 Animator:
   serializedVersion: 3
@@ -8932,7 +8932,6 @@ Transform:
   - {fileID: 1335582846}
   - {fileID: 1334802196}
   - {fileID: 1345063159}
-  - {fileID: 744532447}
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!114 &686411415
@@ -10228,8 +10227,8 @@ Transform:
   m_Children:
   - {fileID: 1970694233}
   - {fileID: 1056771106}
-  m_Father: {fileID: 686411414}
-  m_RootOrder: 4
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!114 &744532448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10241,7 +10240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c752730a02ddb054e8f4f09d3625c334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stage: 4
+  Stage: 0
 --- !u!1 &748067440
 GameObject:
   m_ObjectHideFlags: 0
@@ -13420,7 +13419,7 @@ Transform:
   m_Children:
   - {fileID: 950188261}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &950188260
 GameObject:
   m_ObjectHideFlags: 0
@@ -14517,7 +14516,7 @@ Prefab:
       objectReference: {fileID: 8300000, guid: 0636332f1bf36d749a3205114094b28c, type: 3}
     - target: {fileID: 400002, guid: 75f3ff2857337ab448d5f053283dcc41, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75f3ff2857337ab448d5f053283dcc41, type: 2}
@@ -15468,7 +15467,7 @@ Prefab:
       objectReference: {fileID: 8300000, guid: 64a4c269d2ee3f84fbbb97c68fafc5cd, type: 3}
     - target: {fileID: 400002, guid: 75f3ff2857337ab448d5f053283dcc41, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -19651,7 +19650,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 37f62de7c6b08fe4dbb2fe7fa1447819, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .5
+  m_Volume: .200000003
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -19769,7 +19768,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 3f4409da69a11d74eaaced41645055ad, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .5
+  m_Volume: .200000003
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -20093,7 +20092,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: f5132337c38696f45a538e266244e4e3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .5
+  m_Volume: .200000003
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -20299,7 +20298,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 01091db6618936c429d198b32f0e94a5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .5
+  m_Volume: .200000003
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -23137,7 +23136,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: e57f6a9d0c1816e469e1abf8ec644b6f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .5
+  m_Volume: .200000003
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -24589,7 +24588,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 42a9d11dd1a6f4cb5a69dcc34fe118da, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8200000, guid: 42a9d11dd1a6f4cb5a69dcc34fe118da, type: 2}
       propertyPath: m_audioClip
@@ -27731,7 +27730,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: df69432b4409b7e4db5110fbb28d528e, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: df69432b4409b7e4db5110fbb28d528e, type: 2}
       propertyPath: nature.Array.data[0]
@@ -30092,7 +30091,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: f70dcb75040c2a84bbbac967a4344655, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .5
+  m_Volume: .200000003
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -31277,7 +31276,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 42a9d11dd1a6f4cb5a69dcc34fe118da, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8200000, guid: 42a9d11dd1a6f4cb5a69dcc34fe118da, type: 2}
       propertyPath: m_audioClip
@@ -31986,47 +31985,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 25c324648fc1246419288cc127a891cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &2068934353
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2068934354}
-  - 114: {fileID: 2068934355}
-  m_Layer: 0
-  m_Name: Foreground
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2068934354
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2068934353}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
---- !u!114 &2068934355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2068934353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2717399961ed6bb47a96554a7999a35b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapValue: 2.17000008
-  depth: 0
 --- !u!1 &2074204535
 GameObject:
   m_ObjectHideFlags: 0
@@ -32879,7 +32837,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 472a1e11505e7354995110ba7a870ba6, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .5
+  m_Volume: .200000003
   m_Pitch: 1
   Loop: 1
   Mute: 0
