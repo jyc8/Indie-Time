@@ -25,4 +25,8 @@ public class BGMusicPlayer : MonoBehaviour {
 			}
 		}
 	}
+
+	public void UpdateMusic(){
+		PlayMusic();
+	}
 }

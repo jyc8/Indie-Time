@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class MusicMachine : MonoBehaviour {
+	public GameObject BGMusicManager;
 	public GameObject[] nature;
 	public GameObject[] machine;
 
@@ -49,5 +50,6 @@ public class MusicMachine : MonoBehaviour {
 			}
 		}
 		TriggerEvents(natureCount, machineCount);
+		BGMusicManager.transform.GetComponent<BGMusicPlayer>().UpdateMusic();
 	}
 }
