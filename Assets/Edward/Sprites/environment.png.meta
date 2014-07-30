@@ -96,8 +96,8 @@ TextureImporter:
         y: 1156
         width: 75
         height: 339
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .499998361, y: .0518654808}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree
       rect:
