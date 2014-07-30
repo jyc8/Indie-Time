@@ -185,7 +185,7 @@ GUIText:
   m_GameObject: {fileID: 149523668}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: PROJECT SYPHONIUM
+  m_Text: PROJECT SYMPHONIUM
   m_Anchor: 4
   m_Alignment: 0
   m_PixelOffset: {x: 250, y: 0}
