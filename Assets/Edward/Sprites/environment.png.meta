@@ -174,8 +174,8 @@ TextureImporter:
         y: 1232
         width: 170
         height: 268
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .472986549, y: .0470489971}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Mushroom
       rect:
