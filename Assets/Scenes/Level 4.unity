@@ -34560,7 +34560,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6397dc7b1fa440c459978cd9b430115e, type: 2}
       propertyPath: Stage
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8200010, guid: 6397dc7b1fa440c459978cd9b430115e, type: 2}
       propertyPath: m_Volume
@@ -65515,7 +65515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c752730a02ddb054e8f4f09d3625c334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stage: 1
+  Stage: 3
 --- !u!1001 &1765245172
 Prefab:
   m_ObjectHideFlags: 0
