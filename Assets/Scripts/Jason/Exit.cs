@@ -2,18 +2,24 @@
 using System.Collections;
 
 public class Exit : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
+	void Update (){
 		if (Input.GetKeyDown(KeyCode.F12)){
 			Application.Quit();
 		}
+		if (Input.GetKeyDown(KeyCode.Alpha1)){
+			Application.LoadLevel("Level 1");
+		}	
+		if (Input.GetKeyDown(KeyCode.Alpha2)){
+			Application.LoadLevel("Level 2");
+		}
+		if (Input.GetKeyDown(KeyCode.Alpha3)){
+			Application.LoadLevel("Level 3");
+		}	
+		if (Input.GetKeyDown(KeyCode.Alpha4)){
+			Application.LoadLevel("Level 4");
+		}
+		if (Input.GetKeyDown(KeyCode.Alpha5)){
+			Application.LoadLevel("Level 5 End");
+		}
 	}
 }
-
-
