@@ -417,7 +417,7 @@ GameObject:
   - 61: {fileID: 150897637}
   - 114: {fileID: 150897636}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -479,11 +479,11 @@ Transform:
   m_PrefabInternal: {fileID: 327015907}
   m_GameObject: {fileID: 150897635}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.89893818, y: -.898510158, z: 0}
+  m_LocalPosition: {x: -6.78106213, y: -.898510158, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 337659698}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &162402111
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,7 +795,7 @@ GameObject:
   - 61: {fileID: 279210797}
   - 114: {fileID: 279210796}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -848,7 +848,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86d37b732acd95f40b06f30083c051d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &279210799
 Transform:
@@ -857,7 +857,7 @@ Transform:
   m_PrefabInternal: {fileID: 327015907}
   m_GameObject: {fileID: 279210795}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.40893841, y: -.898510158, z: 0}
+  m_LocalPosition: {x: -.271061897, y: -.898510158, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 337659698}
@@ -953,7 +953,7 @@ GameObject:
   - 61: {fileID: 301627523}
   - 114: {fileID: 301627522}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -970,7 +970,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 582806745}
-  m_RootOrder: 4
+  m_RootOrder: 2
 --- !u!114 &301627522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1018,7 +1018,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94cfda930181f9540b68dc9466800bb1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &327015907
 Prefab:
@@ -1063,6 +1063,38 @@ Prefab:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6.78106213
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.898510158
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.271061897
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.898510158
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.61106205
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.898510158
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.44106197
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.898510158
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
   m_RootGameObject: {fileID: 337659697}
@@ -1095,9 +1127,8 @@ Transform:
   m_Children:
   - {fileID: 279210799}
   - {fileID: 1899380357}
-  - {fileID: 150897639}
-  - {fileID: 801637186}
   - {fileID: 825960523}
+  - {fileID: 150897639}
   m_Father: {fileID: 0}
   m_RootOrder: 14
 --- !u!1 &362491974
@@ -1454,6 +1485,7 @@ GameObject:
   - 61: {fileID: 528641008}
   - 58: {fileID: 528641007}
   - 95: {fileID: 528641006}
+  - 81: {fileID: 528641012}
   - 81: {fileID: 528641011}
   m_Layer: 9
   m_Name: Player
@@ -1480,6 +1512,7 @@ Transform:
   - {fileID: 1373084324}
   - {fileID: 491212418}
   - {fileID: 1427882308}
+  - {fileID: 818472589}
   m_Father: {fileID: 0}
   m_RootOrder: 9
 --- !u!95 &528641006
@@ -1551,7 +1584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingRight: 1
   jump: 0
-  moveForce: 365
+  moveForce: 80
   maxSpeed: 10
   jumpClips:
   - {fileID: 8300000, guid: 8dddb4227f48f9343ba7954cd4089345, type: 3}
@@ -1565,6 +1598,14 @@ AudioListener:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 528641004}
+  m_Enabled: 1
+--- !u!81 &528641012
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8100000, guid: 7e3d4270627770f41be33a72144fbfc3,
+    type: 2}
+  m_PrefabInternal: {fileID: 2110903323}
   m_GameObject: {fileID: 528641004}
   m_Enabled: 1
 --- !u!1 &539541357
@@ -1594,9 +1635,8 @@ Transform:
   m_Children:
   - {fileID: 732234138}
   - {fileID: 1415943417}
-  - {fileID: 1579884627}
-  - {fileID: 1016123049}
   - {fileID: 628746751}
+  - {fileID: 1579884627}
   m_Father: {fileID: 0}
   m_RootOrder: 15
 --- !u!1 &558367445
@@ -1738,11 +1778,10 @@ Transform:
   m_Children:
   - {fileID: 1447880414}
   - {fileID: 871775152}
-  - {fileID: 1766785687}
-  - {fileID: 1649735136}
   - {fileID: 301627521}
+  - {fileID: 1766785687}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!1 &628746750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1755,7 +1794,7 @@ GameObject:
   - 61: {fileID: 628746753}
   - 114: {fileID: 628746752}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1772,7 +1811,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 539541358}
-  m_RootOrder: 4
+  m_RootOrder: 2
 --- !u!114 &628746752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1820,7 +1859,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94cfda930181f9540b68dc9466800bb1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &686411413
 GameObject:
@@ -1905,7 +1944,7 @@ GameObject:
   - 61: {fileID: 732234140}
   - 114: {fileID: 732234139}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1970,7 +2009,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86d37b732acd95f40b06f30083c051d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &754945563
 Prefab:
@@ -2016,85 +2055,70 @@ Prefab:
   m_RootGameObject: {fileID: 1216896795}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &801637182
+--- !u!1 &818472588
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100010, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
-  m_PrefabInternal: {fileID: 327015907}
+  m_PrefabParentObject: {fileID: 100018, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
+  m_PrefabInternal: {fileID: 2110903323}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 801637186}
-  - 212: {fileID: 801637185}
-  - 61: {fileID: 801637184}
-  - 114: {fileID: 801637183}
-  m_Layer: 8
-  m_Name: Dirt Grass
+  - 4: {fileID: 818472589}
+  - 108: {fileID: 818472590}
+  m_Layer: 0
+  m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &801637183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400008, guid: 41b3432be7f9940ed8a7f4063f6d7d27,
-    type: 2}
-  m_PrefabInternal: {fileID: 327015907}
-  m_GameObject: {fileID: 801637182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2717399961ed6bb47a96554a7999a35b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapValue: 2.17000008
-  depth: 0
---- !u!61 &801637184
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100008, guid: 41b3432be7f9940ed8a7f4063f6d7d27,
-    type: 2}
-  m_PrefabInternal: {fileID: 327015907}
-  m_GameObject: {fileID: 801637182}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 2.17000008, y: 2.18000007}
-  m_Center: {x: 0, y: 0}
---- !u!212 &801637185
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 21200008, guid: 41b3432be7f9940ed8a7f4063f6d7d27,
-    type: 2}
-  m_PrefabInternal: {fileID: 327015907}
-  m_GameObject: {fileID: 801637182}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 6c1543edd52d4eb48bcc78c0f85715e6, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 1024582385
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &801637186
+--- !u!4 &818472589
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400010, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
-  m_PrefabInternal: {fileID: 327015907}
-  m_GameObject: {fileID: 801637182}
+  m_PrefabParentObject: {fileID: 400018, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
+  m_PrefabInternal: {fileID: 2110903323}
+  m_GameObject: {fileID: 818472588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.271061897, y: -.898510158, z: 0}
+  m_LocalPosition: {x: .154676437, y: 1.23767138, z: -1.49000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 337659698}
-  m_RootOrder: 3
+  m_Father: {fileID: 528641005}
+  m_RootOrder: 8
+--- !u!108 &818472590
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 10800000, guid: 7e3d4270627770f41be33a72144fbfc3,
+    type: 2}
+  m_PrefabInternal: {fileID: 2110903323}
+  m_GameObject: {fileID: 818472588}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 8
+  m_Range: 3.11999989
+  m_SpotAngle: 64.5
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294963912
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &825960519
 GameObject:
   m_ObjectHideFlags: 0
@@ -2107,7 +2131,7 @@ GameObject:
   - 61: {fileID: 825960521}
   - 114: {fileID: 825960520}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2160,7 +2184,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94cfda930181f9540b68dc9466800bb1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &825960523
 Transform:
@@ -2169,11 +2193,11 @@ Transform:
   m_PrefabInternal: {fileID: 327015907}
   m_GameObject: {fileID: 825960519}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.06893826, y: -.898510158, z: 0}
+  m_LocalPosition: {x: -4.61106205, y: -.898510158, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 337659698}
-  m_RootOrder: 4
+  m_RootOrder: 2
 --- !u!1 &871775151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2186,7 +2210,7 @@ GameObject:
   - 61: {fileID: 871775154}
   - 114: {fileID: 871775153}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2251,7 +2275,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 66420f31857511d4b8f9f0c5a93592d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &881288889
 Prefab:
@@ -2411,7 +2435,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 361e1e5d552ad444fb688b5203c01caa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fc7acbc064f7c6e47bc0c021d0c0962c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &922760027
 Transform:
@@ -2578,7 +2602,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 37a2e5f523a94fc49ba1ce532cdeea9a, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37a2e5f523a94fc49ba1ce532cdeea9a, type: 2}
@@ -2650,85 +2674,6 @@ MonoBehaviour:
   warp: 0
   warpDistance: 0
   warpHeight: 0
---- !u!1 &1016123048
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100010, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
-  m_PrefabInternal: {fileID: 36248854}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1016123049}
-  - 212: {fileID: 1016123052}
-  - 61: {fileID: 1016123051}
-  - 114: {fileID: 1016123050}
-  m_Layer: 8
-  m_Name: Dirt Grass
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1016123049
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400010, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
-  m_PrefabInternal: {fileID: 36248854}
-  m_GameObject: {fileID: 1016123048}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.63360977, y: -21.457037, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 539541358}
-  m_RootOrder: 3
---- !u!114 &1016123050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400008, guid: 41b3432be7f9940ed8a7f4063f6d7d27,
-    type: 2}
-  m_PrefabInternal: {fileID: 36248854}
-  m_GameObject: {fileID: 1016123048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2717399961ed6bb47a96554a7999a35b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapValue: 2.17000008
-  depth: 0
---- !u!61 &1016123051
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100008, guid: 41b3432be7f9940ed8a7f4063f6d7d27,
-    type: 2}
-  m_PrefabInternal: {fileID: 36248854}
-  m_GameObject: {fileID: 1016123048}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 2.17000008, y: 2.18000007}
-  m_Center: {x: 0, y: 0}
---- !u!212 &1016123052
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 21200008, guid: 41b3432be7f9940ed8a7f4063f6d7d27,
-    type: 2}
-  m_PrefabInternal: {fileID: 36248854}
-  m_GameObject: {fileID: 1016123048}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 6c1543edd52d4eb48bcc78c0f85715e6, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 1024582385
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1021141864
 GameObject:
   m_ObjectHideFlags: 0
@@ -3527,7 +3472,7 @@ GameObject:
   - 61: {fileID: 1415943419}
   - 114: {fileID: 1415943418}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3592,7 +3537,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 66420f31857511d4b8f9f0c5a93592d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1423023932
 GameObject:
@@ -3701,7 +3646,7 @@ GameObject:
   - 61: {fileID: 1447880416}
   - 114: {fileID: 1447880415}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3766,7 +3711,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86d37b732acd95f40b06f30083c051d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1457195818
 GameObject:
@@ -4192,9 +4137,8 @@ Transform:
   m_Children:
   - {fileID: 1826323817}
   - {fileID: 2018827019}
-  - {fileID: 1861689798}
-  - {fileID: 1740510063}
   - {fileID: 1809315206}
+  - {fileID: 1861689798}
   m_Father: {fileID: 0}
   m_RootOrder: 12
 --- !u!1 &1567697931
@@ -4378,7 +4322,7 @@ GameObject:
   - 61: {fileID: 1579884625}
   - 114: {fileID: 1579884624}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4444,7 +4388,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 539541358}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &1604670207
 GameObject:
   m_ObjectHideFlags: 0
@@ -4602,85 +4546,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1423023933}
   m_RootOrder: 1
---- !u!1 &1649735135
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100010, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
-  m_PrefabInternal: {fileID: 1662322905}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1649735136}
-  - 212: {fileID: 1649735139}
-  - 61: {fileID: 1649735138}
-  - 114: {fileID: 1649735137}
-  m_Layer: 8
-  m_Name: Dirt Grass
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1649735136
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400010, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
-  m_PrefabInternal: {fileID: 1662322905}
-  m_GameObject: {fileID: 1649735135}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.85573578, y: 19.4345589, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 582806745}
-  m_RootOrder: 3
---- !u!114 &1649735137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400008, guid: 41b3432be7f9940ed8a7f4063f6d7d27,
-    type: 2}
-  m_PrefabInternal: {fileID: 1662322905}
-  m_GameObject: {fileID: 1649735135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2717399961ed6bb47a96554a7999a35b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapValue: 2.17000008
-  depth: 0
---- !u!61 &1649735138
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100008, guid: 41b3432be7f9940ed8a7f4063f6d7d27,
-    type: 2}
-  m_PrefabInternal: {fileID: 1662322905}
-  m_GameObject: {fileID: 1649735135}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 2.17000008, y: 2.18000007}
-  m_Center: {x: 0, y: 0}
---- !u!212 &1649735139
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 21200008, guid: 41b3432be7f9940ed8a7f4063f6d7d27,
-    type: 2}
-  m_PrefabInternal: {fileID: 1662322905}
-  m_GameObject: {fileID: 1649735135}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 6c1543edd52d4eb48bcc78c0f85715e6, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 1024582385
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1662322905
 Prefab:
   m_ObjectHideFlags: 0
@@ -4967,85 +4832,6 @@ Transform:
   - {fileID: 395110357}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!1 &1740510062
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100010, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
-  m_PrefabInternal: {fileID: 428710634}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1740510063}
-  - 212: {fileID: 1740510066}
-  - 61: {fileID: 1740510065}
-  - 114: {fileID: 1740510064}
-  m_Layer: 8
-  m_Name: Dirt Grass
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1740510063
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400010, guid: 41b3432be7f9940ed8a7f4063f6d7d27, type: 2}
-  m_PrefabInternal: {fileID: 428710634}
-  m_GameObject: {fileID: 1740510062}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.63238907, y: 27.534029, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1555560917}
-  m_RootOrder: 3
---- !u!114 &1740510064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400008, guid: 41b3432be7f9940ed8a7f4063f6d7d27,
-    type: 2}
-  m_PrefabInternal: {fileID: 428710634}
-  m_GameObject: {fileID: 1740510062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2717399961ed6bb47a96554a7999a35b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapValue: 2.17000008
-  depth: 0
---- !u!61 &1740510065
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100008, guid: 41b3432be7f9940ed8a7f4063f6d7d27,
-    type: 2}
-  m_PrefabInternal: {fileID: 428710634}
-  m_GameObject: {fileID: 1740510062}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 2.17000008, y: 2.18000007}
-  m_Center: {x: 0, y: 0}
---- !u!212 &1740510066
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 21200008, guid: 41b3432be7f9940ed8a7f4063f6d7d27,
-    type: 2}
-  m_PrefabInternal: {fileID: 428710634}
-  m_GameObject: {fileID: 1740510062}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 6c1543edd52d4eb48bcc78c0f85715e6, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 1024582385
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1746762912
 GameObject:
   m_ObjectHideFlags: 0
@@ -5109,7 +4895,7 @@ GameObject:
   - 61: {fileID: 1766785685}
   - 114: {fileID: 1766785684}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5175,7 +4961,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 582806745}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1001 &1768715494
 Prefab:
   m_ObjectHideFlags: 0
@@ -5379,7 +5165,7 @@ GameObject:
   - 61: {fileID: 1809315208}
   - 114: {fileID: 1809315207}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5396,7 +5182,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1555560917}
-  m_RootOrder: 4
+  m_RootOrder: 2
 --- !u!114 &1809315207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5444,7 +5230,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94cfda930181f9540b68dc9466800bb1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1817157144
 Prefab:
@@ -5523,7 +5309,7 @@ GameObject:
   - 61: {fileID: 1826323819}
   - 114: {fileID: 1826323818}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5588,7 +5374,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86d37b732acd95f40b06f30083c051d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1861689794
 GameObject:
@@ -5602,7 +5388,7 @@ GameObject:
   - 61: {fileID: 1861689796}
   - 114: {fileID: 1861689795}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5668,7 +5454,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1555560917}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &1878859601
 GameObject:
   m_ObjectHideFlags: 0
@@ -5697,6 +5483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbf0cceb132d95b4b8d508aa5114444b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BGMusicManager: {fileID: 0}
   nature:
   - {fileID: 461942390}
   machine:
@@ -5728,7 +5515,7 @@ GameObject:
   - 61: {fileID: 1899380355}
   - 114: {fileID: 1899380354}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5781,7 +5568,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 66420f31857511d4b8f9f0c5a93592d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1899380357
 Transform:
@@ -5790,7 +5577,7 @@ Transform:
   m_PrefabInternal: {fileID: 327015907}
   m_GameObject: {fileID: 1899380353}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.23893833, y: -.898510158, z: 0}
+  m_LocalPosition: {x: -2.44106197, y: -.898510158, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 337659698}
@@ -6064,7 +5851,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!1 &2018827018
 GameObject:
   m_ObjectHideFlags: 0
@@ -6077,7 +5864,7 @@ GameObject:
   - 61: {fileID: 2018827021}
   - 114: {fileID: 2018827020}
   m_Layer: 8
-  m_Name: Dirt Grass
+  m_Name: Dirt Grass-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6142,7 +5929,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a4b33125f59d154c9abb671d5f20145, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 66420f31857511d4b8f9f0c5a93592d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2068934353
 GameObject:
@@ -6268,7 +6055,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 361e1e5d552ad444fb688b5203c01caa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fc7acbc064f7c6e47bc0c021d0c0962c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &2102371196
 Transform:
