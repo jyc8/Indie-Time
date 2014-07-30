@@ -37,5 +37,6 @@ public class PlanetSpin : MonoBehaviour {
 	
 	void TriggerAllEvents(){
 		PopChildren(transform, true);
+
 	}
 }
