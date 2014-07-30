@@ -9144,7 +9144,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 686411413}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 216215851a6cad34c8e76aa1ceace9dd, type: 3}
   m_Name: 
@@ -24823,11 +24823,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 42a9d11dd1a6f4cb5a69dcc34fe118da, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 19.5361023
+      value: 19.2966461
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 42a9d11dd1a6f4cb5a69dcc34fe118da, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.80690563
+      value: 1.73848963
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 42a9d11dd1a6f4cb5a69dcc34fe118da, type: 2}
       propertyPath: m_LocalPosition.z
@@ -27127,7 +27127,7 @@ Transform:
   m_PrefabInternal: {fileID: 1579631349}
   m_GameObject: {fileID: 1731851000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.5361023, y: 1.80690563, z: 0}
+  m_LocalPosition: {x: 19.2966461, y: 1.73848963, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1854798432}
