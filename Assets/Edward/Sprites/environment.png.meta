@@ -22,6 +22,8 @@ TextureImporter:
     21300034: Steel Gate Left
     21300036: Steel Gate Right
     21300038: Steel Slope
+    21300040: Nature Glob
+    21300042: Mechanical World
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -264,6 +266,26 @@ TextureImporter:
         y: 772
         width: 620
         height: 281
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Nature Glob
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 606
+        width: 568
+        height: 566
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mechanical World
+      rect:
+        serializedVersion: 2
+        x: 3549
+        y: 613
+        width: 566
+        height: 566
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
