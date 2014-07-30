@@ -29,7 +29,7 @@ GameObject:
   - 4: {fileID: 400002}
   - 95: {fileID: 9500000}
   - 114: {fileID: 11400002}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mushroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -85.1829376, y: -1.74733925, z: 0}
+  m_LocalPosition: {x: -19.7077255, y: -10.4188366, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -70,7 +70,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 2.22000003, y: 1.86000001}
+  m_Size: {x: 2.46000004, y: 1.86000001}
   m_Center: {x: .150000006, y: -.280000001}
 --- !u!61 &6100002
 BoxCollider2D:
@@ -78,11 +78,11 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: 1.22000003, y: .569999993}
-  m_Center: {x: .180000007, y: 1.67999995}
+  m_IsTrigger: 0
+  m_Size: {x: 1.22000003, y: 1.61000001}
+  m_Center: {x: .159999996, y: -.300000012}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
