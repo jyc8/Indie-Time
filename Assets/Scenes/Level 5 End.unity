@@ -200,8 +200,8 @@ Rigidbody2D:
   m_GameObject: {fileID: 67988933}
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
   m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -578,7 +578,7 @@ GameObject:
   - 212: {fileID: 246842518}
   - 58: {fileID: 246842517}
   - 114: {fileID: 246842520}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Nature Globe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2267,18 +2267,6 @@ Prefab:
     - target: {fileID: 400002, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
       propertyPath: m_LocalPosition.y
       value: -1.47413337
-      objectReference: {fileID: 0}
-    - target: {fileID: 5000000, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5000000, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5000000, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
-      propertyPath: m_AngularDrag
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
       propertyPath: maxSpeed
