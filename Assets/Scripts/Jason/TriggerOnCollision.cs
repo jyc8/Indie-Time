@@ -24,7 +24,7 @@ public class TriggerOnCollision : MonoBehaviour {
 		if (triggerOnce == true && triggered == true){
 			
 		} else{
-			if (loadLevel){
+			if (loadLevel && other.gameObject.tag == "Player"){
 				GlobalVariable.Positive[currentLevelNumber] = positive;
 				Application.LoadLevel(levelName);
 			}
