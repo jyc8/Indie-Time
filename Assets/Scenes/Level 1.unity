@@ -3823,6 +3823,7 @@ Transform:
   - {fileID: 884446343}
   - {fileID: 1072977675}
   - {fileID: 1258304126}
+  - {fileID: 1889356848}
   m_Father: {fileID: 0}
   m_RootOrder: 7
 --- !u!1 &311836771
@@ -6901,7 +6902,7 @@ GameObject:
   - 4: {fileID: 515328057}
   - 108: {fileID: 515328056}
   m_Layer: 0
-  m_Name: Spot Light
+  m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6949,7 +6950,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 515328055}
   m_LocalRotation: {x: .700971484, y: 0, z: 0, w: .713189304}
-  m_LocalPosition: {x: 34.157341, y: 14.9440355, z: -.71079433}
+  m_LocalPosition: {x: 39.7009659, y: 15.1214094, z: -1.07306516}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 309082671}
@@ -12673,7 +12674,7 @@ GameObject:
   - 4: {fileID: 884446343}
   - 108: {fileID: 884446342}
   m_Layer: 0
-  m_Name: Spot Light
+  m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12689,7 +12690,7 @@ Light:
   serializedVersion: 3
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4.1500001
+  m_Intensity: 5.36000013
   m_Range: 128.929993
   m_SpotAngle: 21.3999996
   m_CookieSize: 10
@@ -12721,7 +12722,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 884446341}
   m_LocalRotation: {x: .700971484, y: 0, z: 0, w: .713189304}
-  m_LocalPosition: {x: 16.009325, y: 13.4580717, z: -.685116112}
+  m_LocalPosition: {x: 16.009325, y: 13.3477716, z: -.683210015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 309082671}
@@ -15823,7 +15824,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1072977674
 Light:
   m_ObjectHideFlags: 0
@@ -15835,8 +15836,8 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2.70000005
-  m_Range: 128.929993
-  m_SpotAngle: 32
+  m_Range: 128.520004
+  m_SpotAngle: 46.4000015
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -18518,7 +18519,7 @@ GameObject:
   - 4: {fileID: 1258304126}
   - 108: {fileID: 1258304125}
   m_Layer: 0
-  m_Name: Spot Light
+  m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29616,6 +29617,69 @@ Transform:
   - {fileID: 1003468467}
   m_Father: {fileID: 897647691}
   m_RootOrder: 26
+--- !u!1 &1889356847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1889356848}
+  - 108: {fileID: 1889356849}
+  m_Layer: 0
+  m_Name: Spot Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1889356848
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1889356847}
+  m_LocalRotation: {x: .21699594, y: .646872878, z: -.731065869, w: -.00331099913}
+  m_LocalPosition: {x: 40.9883041, y: 16.0624352, z: -.860131741}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 309082671}
+  m_RootOrder: 4
+--- !u!108 &1889356849
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1889356847}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 2.70000005
+  m_Range: 128.520004
+  m_SpotAngle: 32.6699982
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 0
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &1899143461
 GameObject:
   m_ObjectHideFlags: 0
@@ -33275,7 +33339,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2147099284}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.98423004, y: -1.73689842, z: 0}
+  m_LocalPosition: {x: -8.98423004, y: -1.73689842, z: -.00999999978}
   m_LocalScale: {x: 5.44272709, y: 5.44272232, z: 1}
   m_Children: []
   m_Father: {fileID: 1704213908}
