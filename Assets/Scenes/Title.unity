@@ -185,10 +185,10 @@ GUIText:
   m_GameObject: {fileID: 149523668}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: ROBOT TITLE
-  m_Anchor: 3
+  m_Text: PROJECT SYPHONIUM
+  m_Anchor: 4
   m_Alignment: 0
-  m_PixelOffset: {x: 0, y: 0}
+  m_PixelOffset: {x: 250, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: d1049ee3ead8144ac8b1b49bcf74ba56, type: 3}
