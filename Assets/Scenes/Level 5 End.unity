@@ -1356,7 +1356,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 3f8cc48d54b0c418f946d3c7679babc0, type: 2}
   m_PrefabInternal: {fileID: 1802100350}
   m_GameObject: {fileID: 735552207}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -.197058484, w: .980391741}
   m_LocalPosition: {x: 6.62810326, y: 16.0061874, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4353,17 +4353,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3f8cc48d54b0c418f946d3c7679babc0, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -.197058484
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3f8cc48d54b0c418f946d3c7679babc0, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: .980391741
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3f8cc48d54b0c418f946d3c7679babc0, type: 2}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6100002, guid: 3f8cc48d54b0c418f946d3c7679babc0, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 3f8cc48d54b0c418f946d3c7679babc0, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6100002, guid: 3f8cc48d54b0c418f946d3c7679babc0, type: 2}
+    - {fileID: 6100000, guid: 3f8cc48d54b0c418f946d3c7679babc0, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 3f8cc48d54b0c418f946d3c7679babc0, type: 2}
   m_RootGameObject: {fileID: 735552207}
   m_IsPrefabParent: 0
@@ -4657,8 +4667,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1904733221}
   - 212: {fileID: 1904733225}
-  - 61: {fileID: 1904733224}
-  - 61: {fileID: 1904733223}
   - 114: {fileID: 1904733222}
   m_Layer: 8
   m_Name: FanSprite
@@ -4692,30 +4700,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 5
---- !u!61 &1904733223
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100000, guid: 3f8cc48d54b0c418f946d3c7679babc0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1802100350}
-  m_GameObject: {fileID: 1904733220}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: 1.64999998, y: 6.9000001}
-  m_Center: {x: 0, y: 4.84000015}
---- !u!61 &1904733224
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100002, guid: 3f8cc48d54b0c418f946d3c7679babc0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1802100350}
-  m_GameObject: {fileID: 1904733220}
-  m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: 464fcfff062d25c4bbebaf52485fd135, type: 2}
-  m_IsTrigger: 0
-  m_Size: {x: 2.3900001, y: 1.84000015}
-  m_Center: {x: 0, y: 0}
 --- !u!212 &1904733225
 SpriteRenderer:
   m_ObjectHideFlags: 0
