@@ -4,16 +4,16 @@ using System.Collections;
 public class EnableOnStart : MonoBehaviour {
 	public GameObject[] obj;
 	public bool end = false;
+	public int stage;
 	private int positive = 0;
 	private int negative = 0;
 	
 	void Start(){
 		if (end){
-			for (int i = 0; i < 4; i++){
+			for (int i = 0; i < stage; i++){
 				if (GlobalVariable.Positive[i] == true){
 					positive++;
 				}else {
-					Debug.Log ("Playing Negative " + i);
 					negative++;
 				}
 			}

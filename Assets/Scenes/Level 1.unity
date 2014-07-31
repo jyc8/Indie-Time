@@ -9152,6 +9152,7 @@ MonoBehaviour:
   obj:
   - {fileID: 1341986827}
   end: 0
+  stage: 0
 --- !u!114 &686411416
 MonoBehaviour:
   m_ObjectHideFlags: 0

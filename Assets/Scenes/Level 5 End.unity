@@ -5906,6 +5906,7 @@ MonoBehaviour:
   planet: {fileID: 632984303}
   musicMachine: {fileID: 1938410247}
   speed: .5
+  spin: 1
 --- !u!58 &632984305
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12459,6 +12460,7 @@ MonoBehaviour:
   obj:
   - {fileID: 111447683}
   end: 0
+  stage: 0
 --- !u!1001 &1333031550
 Prefab:
   m_ObjectHideFlags: 0
@@ -12941,6 +12943,7 @@ MonoBehaviour:
   planet: {fileID: 1360947990}
   musicMachine: {fileID: 1957991159}
   speed: .5
+  spin: 1
 --- !u!58 &1360947992
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14642,6 +14645,7 @@ MonoBehaviour:
   planet: {fileID: 1602378415}
   musicMachine: {fileID: 172153710}
   speed: .5
+  spin: 1
 --- !u!58 &1602378418
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15480,6 +15484,10 @@ Prefab:
       propertyPath: obj.Array.data[3]
       value: 
       objectReference: {fileID: 1602378415}
+    - target: {fileID: 11400004, guid: 6a3070e5273b82944b1ed0724d222ea0, type: 2}
+      propertyPath: stage
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6a3070e5273b82944b1ed0724d222ea0, type: 2}
   m_RootGameObject: {fileID: 2101524666}
@@ -19832,6 +19840,7 @@ MonoBehaviour:
   - {fileID: 632984303}
   - {fileID: 1602378415}
   end: 1
+  stage: 4
 --- !u!114 &2101524670
 MonoBehaviour:
   m_ObjectHideFlags: 0
