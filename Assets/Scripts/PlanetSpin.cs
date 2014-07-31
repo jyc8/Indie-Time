@@ -8,7 +8,7 @@ public class PlanetSpin : MonoBehaviour {
 
 	// Update is called once per frame
 	void Start() {
-		TriggerAllEvents();
+		musicMachine.GetComponent<MusicMachine>().TriggerAll();
 	}
 
 	void FixedUpdate() {
@@ -23,22 +23,5 @@ public class PlanetSpin : MonoBehaviour {
 			//Debug.Log("Moving Left");
 			transform.Rotate(Vector3.back * speed);
 		}			
-	}
-
-
-	void PopChildrens(Transform TriggerObject, bool Bool){
-
-		if (TriggerObject.childCount > 0){
-			for (int i = 0; i < TriggerObject.childCount; i++){
-				if (TriggerObject.GetChild(i).GetComponent<StateSelector>() != null){
-					TriggerObject.GetChild(i).GetComponent<StateSelector>().Pop(Bool);
-				}
-				PopChildrens(TriggerObject.GetChild(i), Bool);
-			}
-		}
-	}
-	
-	void TriggerAllEvents(){
-		PopChildrens(transform, true);
 	}
 }

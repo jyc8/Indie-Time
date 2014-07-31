@@ -151,21 +151,6 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1102 &110249927
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Tree Dance
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: b8d7f2031b6a7f6429694a86d53f8ba0, type: 2}
-  m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 383, y: 149, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
 --- !u!1102 &110287071
 State:
   m_ObjectHideFlags: 3
@@ -178,21 +163,6 @@ State:
   - {fileID: 7400000, guid: e87d90c421c91234aa7fd0a50fe060ae, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: -192, y: 84, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110290386
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Tree Idle
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: e87d90c421c91234aa7fd0a50fe060ae, type: 2}
-  m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 418, y: 214, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -209,15 +179,9 @@ StateMachine:
   - {fileID: 110287071}
   - {fileID: 110235267}
   - {fileID: 110236283}
-  - {fileID: 110249927}
-  - {fileID: 110290386}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
-    data:
-      first: {fileID: 110236283}
-      second:
-      - {fileID: 110100739}
     data:
       first: {fileID: 110287071}
       second:
@@ -230,6 +194,10 @@ StateMachine:
       first: {fileID: 110235267}
       second:
       - {fileID: 110177584}
+    data:
+      first: {fileID: 110236283}
+      second:
+      - {fileID: 110100739}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 96, y: 0, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
