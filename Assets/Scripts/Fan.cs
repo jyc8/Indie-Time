@@ -8,7 +8,9 @@ public class Fan : MonoBehaviour {
 		if (other.gameObject.tag == "Player")
 		{	
 			Debug.Log ("Blowing");
-			other.rigidbody2D.AddRelativeForce(gameObject.transform.up*force, ForceMode2D.Impulse);
+			//other.rigidbody2D.AddRelativeForce(gameObject.transform.up*force, ForceMode2D.Impulse);
+			other.rigidbody2D.velocity = Vector2.zero;
+			other.rigidbody2D.AddForce(new Vector2(0f, 800));
 		}
 	}
 }
