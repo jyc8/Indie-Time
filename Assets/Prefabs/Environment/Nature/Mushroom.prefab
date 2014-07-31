@@ -70,8 +70,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 2.46000004, y: 1.86000001}
-  m_Center: {x: .150000006, y: -.280000001}
+  m_Size: {x: 1.77999997, y: 1.57000005}
+  m_Center: {x: .150000006, y: -.140000001}
 --- !u!61 &6100002
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -81,7 +81,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.22000003, y: 1.61000001}
+  m_Size: {x: 2.08999991, y: 1.61000001}
   m_Center: {x: .159999996, y: -.300000012}
 --- !u!95 &9500000
 Animator:
@@ -108,7 +108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ad303206be66b4da6aa072ffb8e34c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceForce: 15
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
