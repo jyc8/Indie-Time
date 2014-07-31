@@ -27,8 +27,8 @@ public class EnableOnStart : MonoBehaviour {
 
 	void EnableGlobe(){
 		//Debug
-		negative = 0;
-		positive = 4;
+		//negative = 2;
+		//positive = 2;
 		//End Debug
 		if (negative > positive){
 			obj[0].SetActive(true);
