@@ -8,10 +8,10 @@ public class PlanetSpin : MonoBehaviour {
 
 	// Update is called once per frame
 	void Start() {
-		musicMachine.GetComponent<MusicMachine>().TriggerAll();
+
 	}
 
-	void FixedUpdate() {
+	void Update() {
 		// Cache the horizontal input.
 		float h = Input.GetAxis("Horizontal");
 		
@@ -19,6 +19,7 @@ public class PlanetSpin : MonoBehaviour {
 		if(h > 0){
 			//Debug.Log("Moving Right");
 			transform.Rotate(Vector3.forward * speed);
+			musicMachine.GetComponent<MusicMachine>().TriggerAll();
 		}else if(h < 0){
 			//Debug.Log("Moving Left");
 			transform.Rotate(Vector3.back * speed);
