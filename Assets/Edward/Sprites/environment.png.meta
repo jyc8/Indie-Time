@@ -269,25 +269,5 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Nature Glob
-      rect:
-        serializedVersion: 2
-        x: 2932
-        y: 606
-        width: 568
-        height: 566
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Mechanical World
-      rect:
-        serializedVersion: 2
-        x: 3549
-        y: 613
-        width: 566
-        height: 566
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

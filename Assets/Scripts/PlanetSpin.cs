@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlanetSpin : MonoBehaviour {
 	public GameObject planet;
+	public GameObject musicMachine;
 	public float speed = 0.5f;
 
 	// Update is called once per frame
@@ -16,29 +17,28 @@ public class PlanetSpin : MonoBehaviour {
 		
 		// If the input is moving the player right and the player is facing left...
 		if(h > 0){
-			Debug.Log("Moving Right");
+			//Debug.Log("Moving Right");
 			transform.Rotate(Vector3.forward * speed);
 		}else if(h < 0){
-			Debug.Log("Moving Left");
+			//Debug.Log("Moving Left");
 			transform.Rotate(Vector3.back * speed);
 		}			
 	}
 
 
-	void PopChildren(Transform TriggerObject, bool Bool){
-		//Debug.Log(TriggerObject.childCount);
+	void PopChildrens(Transform TriggerObject, bool Bool){
+
 		if (TriggerObject.childCount > 0){
 			for (int i = 0; i < TriggerObject.childCount; i++){
 				if (TriggerObject.GetChild(i).GetComponent<StateSelector>() != null){
 					TriggerObject.GetChild(i).GetComponent<StateSelector>().Pop(Bool);
 				}
-				PopChildren(TriggerObject.GetChild(i), Bool);
+				PopChildrens(TriggerObject.GetChild(i), Bool);
 			}
 		}
 	}
 	
 	void TriggerAllEvents(){
-		PopChildren(transform, true);
-
+		PopChildrens(transform, true);
 	}
 }

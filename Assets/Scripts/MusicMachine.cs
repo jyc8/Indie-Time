@@ -52,4 +52,7 @@ public class MusicMachine : MonoBehaviour {
 		TriggerEvents(natureCount, machineCount);
 		BGMusicManager.transform.GetComponent<BGMusicPlayer>().UpdateMusic();
 	}
+
+	public void TriggerAll(){
+	}
 }
