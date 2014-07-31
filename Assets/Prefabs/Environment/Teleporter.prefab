@@ -197,8 +197,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed0dfb50fb14684782c130c359f4e91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerOnce: 0
+  setActiveTrigger: 0
+  target: {fileID: 0}
+  audioTrigger: 0
   loadLevel: 1
-  level: Level 4
+  positive: 0
+  currentLevelNumber: 0
+  levelName: Scene Name
+  pauseMovement: 1
+  Player: {fileID: 0}
+  time: 2
   warp: 0
   warpDistance: 0
   warpHeight: 0

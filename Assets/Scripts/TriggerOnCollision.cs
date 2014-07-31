@@ -31,8 +31,7 @@ public class TriggerOnCollision : MonoBehaviour {
 		} else if (other.gameObject.tag == "Player"){
 			triggered = true;
 			if (loadLevel){
-				GlobalVariable.Positive[currentLevelNumber] = positive;
-				Application.LoadLevel(levelName);
+				StartCoroutine(FadeOut());
 			}
 			if (warp){
 				Debug.Log("Warping.");
@@ -76,4 +75,17 @@ public class TriggerOnCollision : MonoBehaviour {
 		}
 		target.SetActive(false);
 	}
+
+	IEnumerator FadeOut(){
+		target.SetActive(true);
+		for (float i = 10; i > 0; i--){
+			yield return new WaitForSeconds (0.2f);
+			if (escaped){
+				break;
+			}
+		}
+		GlobalVariable.Positive[currentLevelNumber] = positive;
+		Application.LoadLevel(levelName);
+	}
+
 }
