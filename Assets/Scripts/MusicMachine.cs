@@ -54,6 +54,7 @@ public class MusicMachine : MonoBehaviour {
 	}
 
 	public void TriggerAll(){
+		PopChildren(nature[0].transform, true);
 		PopChildren(machine[0].transform, true);
 	}
 }
