@@ -20,7 +20,7 @@ public class TriggerOnCollision : MonoBehaviour {
 	public float warpHeight;
 
 	void Update () {
-		if (triggered == true && Input.GetKeyDown(KeyCode.Escape)){
+		if (triggered == true && Input.GetKeyDown(KeyCode.Space)){
 			escaped = true;
 		}
 	}

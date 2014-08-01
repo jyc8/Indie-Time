@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Exit : MonoBehaviour {
 	void Update (){
-		if (Input.GetKeyDown(KeyCode.F12)){
+		if (Input.GetKeyDown(KeyCode.Escape)){
 			Application.Quit();
 		}
 		if (Input.GetKeyDown(KeyCode.Alpha1)){
