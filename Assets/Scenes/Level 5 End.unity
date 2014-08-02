@@ -698,7 +698,7 @@ MonoBehaviour:
   moveForce: 80
   maxSpeed: 0
   jumpClips:
-  - {fileID: 8300000, guid: 8dddb4227f48f9343ba7954cd4089345, type: 3}
+  - {fileID: 0}
   jumpForce: 1000
   pickUpDist: 2
   attachObject: {fileID: 651123712}
@@ -723,7 +723,7 @@ Transform:
   - {fileID: 651123713}
   - {fileID: 1547669556}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
 --- !u!1001 &70393468
 Prefab:
   m_ObjectHideFlags: 0
@@ -11166,7 +11166,7 @@ Transform:
   - {fileID: 632984307}
   - {fileID: 1602378416}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 1
 --- !u!114 &1195591904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12359,7 +12359,7 @@ Transform:
   m_Children:
   - {fileID: 111447684}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!114 &1318443259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15127,7 +15127,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
       propertyPath: jumpClips.Array.data[0]
@@ -16564,7 +16564,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 64b12b15baf9644af9f0651e6705f0ef, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 64b12b15baf9644af9f0651e6705f0ef, type: 2}
       propertyPath: orthographic size
@@ -19431,33 +19431,6 @@ Prefab:
   m_RootGameObject: {fileID: 1315621491}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &2072110089
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2072110090}
-  m_Layer: 0
-  m_Name: Foreground
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2072110090
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2072110089}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
 --- !u!1 &2079741970
 GameObject:
   m_ObjectHideFlags: 0

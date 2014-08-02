@@ -5951,7 +5951,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 418132522}
   m_Layer: 0
-  m_Name: Audios
+  m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7587,7 +7587,7 @@ Transform:
   - {fileID: 491212418}
   - {fileID: 1427882308}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
 --- !u!95 &528641006
 Animator:
   serializedVersion: 3
@@ -10732,7 +10732,7 @@ Transform:
   - {fileID: 1970694233}
   - {fileID: 1056771106}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
 --- !u!114 &744532448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11746,7 +11746,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 100018, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
       propertyPath: m_IsActive
@@ -13831,7 +13831,7 @@ Transform:
   - {fileID: 1985770127}
   - {fileID: 950188261}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
 --- !u!1 &950188260
 GameObject:
   m_ObjectHideFlags: 0
@@ -26920,7 +26920,7 @@ Transform:
   - {fileID: 395110357}
   - {fileID: 1335582846}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &1727446120
 GameObject:
   m_ObjectHideFlags: 0
@@ -28040,7 +28040,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: df69432b4409b7e4db5110fbb28d528e, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: df69432b4409b7e4db5110fbb28d528e, type: 2}
       propertyPath: nature.Array.data[0]
@@ -28636,7 +28636,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 6397dc7b1fa440c459978cd9b430115e, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6397dc7b1fa440c459978cd9b430115e, type: 2}
       propertyPath: m_Enabled
@@ -28684,7 +28684,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 64b12b15baf9644af9f0651e6705f0ef, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 64b12b15baf9644af9f0651e6705f0ef, type: 2}
       propertyPath: orthographic size
@@ -29819,7 +29819,7 @@ Transform:
   - {fileID: 2087216367}
   - {fileID: 1311796017}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
 --- !u!1 &1880524342
 GameObject:
   m_ObjectHideFlags: 0

@@ -2280,7 +2280,7 @@ MonoBehaviour:
   moveForce: 80
   maxSpeed: 8
   jumpClips:
-  - {fileID: 8300000, guid: 8dddb4227f48f9343ba7954cd4089345, type: 3}
+  - {fileID: 0}
   jumpForce: 1000
   pickUpDist: 2
   attachObject: {fileID: 651123712}
@@ -14575,7 +14575,7 @@ Transform:
   - {fileID: 804125564}
   - {fileID: 1588837393}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &435115139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15055,7 +15055,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 75f3ff2857337ab448d5f053283dcc41, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8200000, guid: 75f3ff2857337ab448d5f053283dcc41, type: 2}
       propertyPath: m_audioClip
@@ -18151,7 +18151,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 6397dc7b1fa440c459978cd9b430115e, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 6397dc7b1fa440c459978cd9b430115e, type: 2}
       propertyPath: Stage
@@ -23624,7 +23624,7 @@ Transform:
   - {fileID: 1026631424}
   - {fileID: 247744447}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!1 &756632283
 GameObject:
   m_ObjectHideFlags: 0
@@ -24414,7 +24414,7 @@ Transform:
   - {fileID: 1751059420}
   - {fileID: 1338967908}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!61 &788439681
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49138,7 +49138,7 @@ Transform:
   - {fileID: 421677776}
   - {fileID: 44692006}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!114 &1555503786
 MonoBehaviour:
   m_ObjectHideFlags: 0
