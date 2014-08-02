@@ -1,8 +1,9 @@
 fileFormatVersion: 2
-guid: c91578ddb0f42a8448105faf402fb482
+guid: c8bc4f0f26c748740b443463d2007bad
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Grass Block
+    21300000: Stage 1 draft
+    21300002: Forest
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,9 +27,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

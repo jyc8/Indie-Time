@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 80ad835db02f8844d9a27d65a235a05d
+guid: 3bfff4e2a736747baa46f82939da0fca
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Rock
+    21300000: cave
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
