@@ -12883,6 +12883,8 @@ GameObject:
   - 61: {fileID: 380429194}
   - 61: {fileID: 380429193}
   - 114: {fileID: 380429192}
+  - 61: {fileID: 380429198}
+  - 61: {fileID: 380429197}
   m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
@@ -12912,8 +12914,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.64999998, y: 10.6899996}
-  m_Center: {x: 0, y: 6.30999994}
+  m_Size: {x: 1.64999998, y: .660000026}
+  m_Center: {x: 0, y: 3}
 --- !u!61 &380429194
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12961,6 +12963,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 134845614}
   m_RootOrder: 0
+--- !u!61 &380429197
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100004, guid: 3f8cc48d54b0c418f946d3c7679babc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1469509815}
+  m_GameObject: {fileID: 380429191}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.79999995, y: .660000026}
+  m_Center: {x: 0, y: 9}
+--- !u!61 &380429198
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100006, guid: 3f8cc48d54b0c418f946d3c7679babc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1469509815}
+  m_GameObject: {fileID: 380429191}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.79999995, y: .660000026}
+  m_Center: {x: 0, y: 6}
 --- !u!1001 &380472447
 Prefab:
   m_ObjectHideFlags: 0
@@ -15541,6 +15567,8 @@ GameObject:
   - 61: {fileID: 471720941}
   - 61: {fileID: 471720940}
   - 114: {fileID: 471720939}
+  - 61: {fileID: 471720944}
+  - 61: {fileID: 471720943}
   m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
@@ -15582,8 +15610,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.64999998, y: 10.6899996}
-  m_Center: {x: 0, y: 6.30999994}
+  m_Size: {x: 1.64999998, y: .660000026}
+  m_Center: {x: 0, y: 3}
 --- !u!61 &471720941
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15619,6 +15647,30 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300018, guid: cbed73cbb771e48baadecc88494c4f9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &471720943
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100004, guid: 3f8cc48d54b0c418f946d3c7679babc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1607532285}
+  m_GameObject: {fileID: 471720937}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.79999995, y: .660000026}
+  m_Center: {x: 0, y: 9}
+--- !u!61 &471720944
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100006, guid: 3f8cc48d54b0c418f946d3c7679babc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1607532285}
+  m_GameObject: {fileID: 471720937}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.79999995, y: .660000026}
+  m_Center: {x: 0, y: 6}
 --- !u!1001 &478155414
 Prefab:
   m_ObjectHideFlags: 0
@@ -43102,6 +43154,8 @@ GameObject:
   - 61: {fileID: 1367812410}
   - 61: {fileID: 1367812409}
   - 114: {fileID: 1367812408}
+  - 61: {fileID: 1367812413}
+  - 61: {fileID: 1367812412}
   m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
@@ -43143,8 +43197,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.64999998, y: 10.6899996}
-  m_Center: {x: 0, y: 6.30999994}
+  m_Size: {x: 1.64999998, y: .660000026}
+  m_Center: {x: 0, y: 3}
 --- !u!61 &1367812410
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43180,6 +43234,30 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300018, guid: cbed73cbb771e48baadecc88494c4f9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &1367812412
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100004, guid: 3f8cc48d54b0c418f946d3c7679babc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1961533544}
+  m_GameObject: {fileID: 1367812406}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.79999995, y: .660000026}
+  m_Center: {x: 0, y: 9}
+--- !u!61 &1367812413
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100006, guid: 3f8cc48d54b0c418f946d3c7679babc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1961533544}
+  m_GameObject: {fileID: 1367812406}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.79999995, y: .660000026}
+  m_Center: {x: 0, y: 6}
 --- !u!1001 &1373357200
 Prefab:
   m_ObjectHideFlags: 0

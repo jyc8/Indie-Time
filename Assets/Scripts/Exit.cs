@@ -21,5 +21,8 @@ public class Exit : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Alpha5)){
 			Application.LoadLevel("Level 5 End");
 		}
+		if (Input.GetKeyDown(KeyCode.U)){
+			Application.LoadLevel("Free Mode");
+		}
 	}
 }

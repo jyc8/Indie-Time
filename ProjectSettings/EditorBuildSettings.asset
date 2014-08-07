@@ -19,3 +19,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 4.unity
   - enabled: 1
     path: Assets/Scenes/Level 5 End.unity
+  - enabled: 1
+    path: Assets/Scenes/Free Mode.unity
