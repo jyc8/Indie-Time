@@ -29,7 +29,7 @@ GameObject:
   - 61: {fileID: 6100002}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,8 +70,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.64999998, y: 9.13000011}
-  m_Center: {x: 0, y: 4.84000015}
+  m_Size: {x: 1.64999998, y: 10.6899996}
+  m_Center: {x: 0, y: 6.30999994}
 --- !u!61 &6100002
 BoxCollider2D:
   m_ObjectHideFlags: 1

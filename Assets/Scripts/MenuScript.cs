@@ -6,30 +6,26 @@
 public class MenuScript : MonoBehaviour
 {
 	private GUISkin skin;
-	
-	void Start()
-	{
-		// Load a skin for the buttons
-		skin = Resources.Load("GUISkin") as GUISkin;
-	}
-	
+	public int buttonWidth = 128;
+	public int buttonHeight = 50;
+	public string buttonMessage = "START";
+	public bool loadSceneOnClick = true;
+	public string sceneName = "Level 1";
+
 	void OnGUI()
-	{
-		const int buttonWidth = 128;
-		const int buttonHeight = 50;
-		
+	{		
 		// Set the skin to use
-		GUI.skin = skin;
+		GUI.skin = Resources.Load("GUISkin") as GUISkin;
 		
 		// Draw a button to start the game
 		if (GUI.Button(
-			// Center in X, 2/3 of the height in Y
-			new Rect(Screen.width / 2 - (buttonWidth / 1.5f), (2 * Screen.height / 3) - (buttonHeight / 2), buttonWidth, buttonHeight),
-			"START"
-			))
-		{
+				// Center in X, 2/3 of the height in Y
+				new Rect(Screen.width / 2 - (buttonWidth / 1.5f),
+		        	(2 * Screen.height / 3) - (buttonHeight / 2) + 100,
+		        	buttonWidth, buttonHeight), buttonMessage) 
+		    && loadSceneOnClick){
 			// On Click, load the first level.
-			Application.LoadLevel("Level 1"); // "game" is the scene name
+			Application.LoadLevel(sceneName); // "game" is the scene name
 		}
 	}
 }
