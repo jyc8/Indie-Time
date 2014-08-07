@@ -2280,7 +2280,7 @@ MonoBehaviour:
   moveForce: 80
   maxSpeed: 8
   jumpClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 8dddb4227f48f9343ba7954cd4089345, type: 3}
   jumpForce: 1000
   pickUpDist: 2
   attachObject: {fileID: 651123712}
@@ -2293,7 +2293,7 @@ Transform:
   m_PrefabInternal: {fileID: 1668941054}
   m_GameObject: {fileID: 67988933}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.74008656, y: -1.99016857, z: 0}
+  m_LocalPosition: {x: 25.5637264, y: 14.1976137, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1866870320}
@@ -12883,7 +12883,7 @@ GameObject:
   - 61: {fileID: 380429194}
   - 61: {fileID: 380429193}
   - 114: {fileID: 380429192}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12902,7 +12902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55b0024a5978c54d98ce06357e44112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5
 --- !u!61 &380429193
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12913,8 +12912,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.64999998, y: 6.9000001}
-  m_Center: {x: 0, y: 4.84000015}
+  m_Size: {x: 1.64999998, y: 10.6899996}
+  m_Center: {x: 0, y: 6.30999994}
 --- !u!61 &380429194
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15542,7 +15541,7 @@ GameObject:
   - 61: {fileID: 471720941}
   - 61: {fileID: 471720940}
   - 114: {fileID: 471720939}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15573,7 +15572,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55b0024a5978c54d98ce06357e44112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5
 --- !u!61 &471720940
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15584,8 +15582,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.64999998, y: 6.9000001}
-  m_Center: {x: 0, y: 4.84000015}
+  m_Size: {x: 1.64999998, y: 10.6899996}
+  m_Center: {x: 0, y: 6.30999994}
 --- !u!61 &471720941
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15680,6 +15678,7 @@ GameObject:
   - 61: {fileID: 483003753}
   - 114: {fileID: 483003752}
   - 95: {fileID: 483003751}
+  - 114: {fileID: 483003759}
   m_Layer: 0
   m_Name: Teleporter
   m_TagString: Untagged
@@ -15854,6 +15853,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1098625371}
   m_RootOrder: 3
+--- !u!114 &483003759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 483003750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7bf0e2cd532bd7408d174ec7a5774ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &483758213
 GameObject:
   m_ObjectHideFlags: 0
@@ -25074,6 +25084,7 @@ GameObject:
   - 61: {fileID: 809333960}
   - 114: {fileID: 809333959}
   - 95: {fileID: 809333958}
+  - 114: {fileID: 809333965}
   m_Layer: 0
   m_Name: Teleporter
   m_TagString: Untagged
@@ -25248,6 +25259,17 @@ MonoBehaviour:
   warp: 0
   warpDistance: 0
   warpHeight: 0
+--- !u!114 &809333965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 809333956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7bf0e2cd532bd7408d174ec7a5774ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &809701479
 Prefab:
   m_ObjectHideFlags: 0
@@ -41643,7 +41665,7 @@ Transform:
   m_PrefabInternal: {fileID: 1809168866}
   m_GameObject: {fileID: 1318443253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.65183258, y: 3.06461382, z: -10}
+  m_LocalPosition: {x: 25.6225681, y: 1.76417828, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1915557097}
@@ -43080,7 +43102,7 @@ GameObject:
   - 61: {fileID: 1367812410}
   - 61: {fileID: 1367812409}
   - 114: {fileID: 1367812408}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43111,7 +43133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55b0024a5978c54d98ce06357e44112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5
 --- !u!61 &1367812409
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43122,8 +43143,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.64999998, y: 6.9000001}
-  m_Center: {x: 0, y: 4.84000015}
+  m_Size: {x: 1.64999998, y: 10.6899996}
+  m_Center: {x: 0, y: 6.30999994}
 --- !u!61 &1367812410
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51922,11 +51943,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400006, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -9.74008656
+      value: 25.5637264
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.99016857
+      value: 14.1976137
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -56156,11 +56177,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 64b12b15baf9644af9f0651e6705f0ef, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.65183258
+      value: 25.6225681
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 64b12b15baf9644af9f0651e6705f0ef, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.06461382
+      value: 1.76417828
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 64b12b15baf9644af9f0651e6705f0ef, type: 2}
       propertyPath: m_LocalPosition.z

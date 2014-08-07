@@ -698,7 +698,7 @@ MonoBehaviour:
   moveForce: 80
   maxSpeed: 0
   jumpClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 8dddb4227f48f9343ba7954cd4089345, type: 3}
   jumpForce: 1000
   pickUpDist: 2
   attachObject: {fileID: 651123712}
@@ -711,7 +711,7 @@ Transform:
   m_PrefabInternal: {fileID: 1668941054}
   m_GameObject: {fileID: 67988933}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 18.8081722, z: 0}
+  m_LocalPosition: {x: 0, y: 30.7515163, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1866870320}
@@ -9849,7 +9849,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1039013377}
   - 212: {fileID: 1039013378}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9995,7 +9995,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1067894961}
   - 212: {fileID: 1067894962}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14727,7 +14727,7 @@ GameObject:
   - 4: {fileID: 1618235344}
   - 212: {fileID: 1618235346}
   - 114: {fileID: 1618235345}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14758,7 +14758,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55b0024a5978c54d98ce06357e44112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5
 --- !u!212 &1618235346
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15103,7 +15102,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 18.8081722
+      value: 30.7515163
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 7e3d4270627770f41be33a72144fbfc3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -17328,7 +17327,7 @@ GameObject:
   - 4: {fileID: 1904733221}
   - 212: {fileID: 1904733225}
   - 114: {fileID: 1904733222}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17359,7 +17358,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55b0024a5978c54d98ce06357e44112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5
 --- !u!212 &1904733225
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18364,7 +18362,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1986173206}
   - 212: {fileID: 1986173207}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18495,7 +18493,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1998812325}
   - 212: {fileID: 1998812326}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

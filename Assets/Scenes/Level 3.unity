@@ -46638,6 +46638,7 @@ GameObject:
   - 61: {fileID: 1004608247}
   - 114: {fileID: 1004608246}
   - 95: {fileID: 1004608245}
+  - 114: {fileID: 1004608252}
   m_Layer: 0
   m_Name: Teleporter
   m_TagString: Untagged
@@ -46813,6 +46814,18 @@ MonoBehaviour:
   warp: 0
   warpDistance: 0
   warpHeight: 0
+--- !u!114 &1004608252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: babffe607d27de3408a09b189235373b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1782545854}
+  m_GameObject: {fileID: 1004608243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7bf0e2cd532bd7408d174ec7a5774ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1006176911
 GameObject:
   m_ObjectHideFlags: 0
@@ -101764,6 +101777,7 @@ GameObject:
   - 61: {fileID: 2142640629}
   - 114: {fileID: 2142640628}
   - 95: {fileID: 2142640627}
+  - 114: {fileID: 2142640634}
   m_Layer: 0
   m_Name: Teleporter
   m_TagString: Untagged
@@ -101938,6 +101952,17 @@ MonoBehaviour:
   warp: 0
   warpDistance: 0
   warpHeight: 0
+--- !u!114 &2142640634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2142640625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7bf0e2cd532bd7408d174ec7a5774ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2144738317
 GameObject:
   m_ObjectHideFlags: 0
