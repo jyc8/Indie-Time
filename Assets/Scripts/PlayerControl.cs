@@ -105,7 +105,7 @@ public class PlayerControl : MonoBehaviour
 	
 	private void Drop()
 	{
-		Transform nearbySlot = findObject(3f, slotsLayer);
+		Transform nearbySlot = findObject(pickUpDist, slotsLayer);
 		carriedObject.collider2D.enabled = true;
 		if( nearbySlot != null ) // Check if a slot is found
 		{	
