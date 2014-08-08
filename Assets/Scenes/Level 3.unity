@@ -4214,8 +4214,8 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 1024582385
-  m_SortingOrder: 1
+  m_SortingLayerID: 1535931219
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300022, guid: cbed73cbb771e48baadecc88494c4f9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &88399016
@@ -77116,6 +77116,22 @@ Prefab:
       propertyPath: m_SortingLayerID
       value: 1535931219
       objectReference: {fileID: 0}
+    - target: {fileID: 21200022, guid: bb06b2213ac6711428436c0b10940d3b, type: 2}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200022, guid: bb06b2213ac6711428436c0b10940d3b, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1535931219
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200002, guid: bb06b2213ac6711428436c0b10940d3b, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1535931219
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200002, guid: bb06b2213ac6711428436c0b10940d3b, type: 2}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb06b2213ac6711428436c0b10940d3b, type: 2}
   m_RootGameObject: {fileID: 1023905053}
@@ -79872,6 +79888,7 @@ GameObject:
   - 114: {fileID: 1690556057}
   - 61: {fileID: 1690556059}
   - 61: {fileID: 1690556058}
+  - 61: {fileID: 1690556060}
   m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
@@ -79937,7 +79954,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 1.64999998, y: .660000026}
-  m_Center: {x: 0, y: 3}
+  m_Center: {x: 0, y: 1}
 --- !u!114 &1690556057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79961,7 +79978,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 1.79999995, y: .660000026}
-  m_Center: {x: 0, y: 9}
+  m_Center: {x: 0, y: 6}
 --- !u!61 &1690556059
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -79973,7 +79990,19 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 1.79999995, y: .660000026}
-  m_Center: {x: 0, y: 6}
+  m_Center: {x: 0, y: 3}
+--- !u!61 &1690556060
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100008, guid: 3f8cc48d54b0c418f946d3c7679babc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 98129090}
+  m_GameObject: {fileID: 1690556052}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.64999998, y: .660000026}
+  m_Center: {x: 0, y: 9}
 --- !u!1001 &1691055167
 Prefab:
   m_ObjectHideFlags: 0
@@ -85405,6 +85434,7 @@ GameObject:
   - 114: {fileID: 1800795035}
   - 61: {fileID: 1800795040}
   - 61: {fileID: 1800795039}
+  - 61: {fileID: 1800795041}
   m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
@@ -85447,7 +85477,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 1.64999998, y: .660000026}
-  m_Center: {x: 0, y: 3}
+  m_Center: {x: 0, y: 1}
 --- !u!61 &1800795037
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -85494,7 +85524,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 1.79999995, y: .660000026}
-  m_Center: {x: 0, y: 9}
+  m_Center: {x: 0, y: 6}
 --- !u!61 &1800795040
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -85506,7 +85536,19 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 1.79999995, y: .660000026}
-  m_Center: {x: 0, y: 6}
+  m_Center: {x: 0, y: 3}
+--- !u!61 &1800795041
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100008, guid: 3f8cc48d54b0c418f946d3c7679babc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 878735883}
+  m_GameObject: {fileID: 1800795033}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.64999998, y: .660000026}
+  m_Center: {x: 0, y: 9}
 --- !u!1 &1801383950
 GameObject:
   m_ObjectHideFlags: 0
@@ -87777,8 +87819,8 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 1024582385
-  m_SortingOrder: 1
+  m_SortingLayerID: 1535931219
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300022, guid: cbed73cbb771e48baadecc88494c4f9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1841890757
@@ -88454,6 +88496,7 @@ GameObject:
   - 114: {fileID: 1859242312}
   - 61: {fileID: 1859242317}
   - 61: {fileID: 1859242316}
+  - 61: {fileID: 1859242318}
   m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
@@ -88496,7 +88539,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 1.64999998, y: .660000026}
-  m_Center: {x: 0, y: 3}
+  m_Center: {x: 0, y: 1}
 --- !u!61 &1859242314
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -88543,7 +88586,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 1.79999995, y: .660000026}
-  m_Center: {x: 0, y: 9}
+  m_Center: {x: 0, y: 6}
 --- !u!61 &1859242317
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -88555,7 +88598,19 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 1.79999995, y: .660000026}
-  m_Center: {x: 0, y: 6}
+  m_Center: {x: 0, y: 3}
+--- !u!61 &1859242318
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100008, guid: 3f8cc48d54b0c418f946d3c7679babc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 544521891}
+  m_GameObject: {fileID: 1859242310}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.64999998, y: .660000026}
+  m_Center: {x: 0, y: 9}
 --- !u!1001 &1859893037
 Prefab:
   m_ObjectHideFlags: 0
