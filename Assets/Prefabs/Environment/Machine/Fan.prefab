@@ -31,6 +31,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 61: {fileID: 6100006}
   - 61: {fileID: 6100004}
+  - 61: {fileID: 6100008}
   m_Layer: 0
   m_Name: FanSprite
   m_TagString: Untagged
@@ -73,7 +74,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 1.64999998, y: .660000026}
-  m_Center: {x: 0, y: 3}
+  m_Center: {x: 0, y: 1}
 --- !u!61 &6100002
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -95,7 +96,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 1.79999995, y: .660000026}
-  m_Center: {x: 0, y: 9}
+  m_Center: {x: 0, y: 6}
 --- !u!61 &6100006
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -106,7 +107,18 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 1.79999995, y: .660000026}
-  m_Center: {x: 0, y: 6}
+  m_Center: {x: 0, y: 3}
+--- !u!61 &6100008
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.64999998, y: .660000026}
+  m_Center: {x: 0, y: 9}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
